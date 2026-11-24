@@ -1,0 +1,131 @@
+{
+  "nome": "RetroMancy — Cores Retro Vivas",
+  "paletas": {
+    "Arcade Neon": [
+      {
+        "nome": "Rosa Fliperama",
+        "hex": "#FF2D96"
+      },
+      {
+        "nome": "Laranja Turbo",
+        "hex": "#FF641F"
+      },
+      {
+        "nome": "Amarelo Ficha",
+        "hex": "#FFE600"
+      },
+      {
+        "nome": "Verde Laser",
+        "hex": "#39FF70"
+      },
+      {
+        "nome": "Ciano Elétrico",
+        "hex": "#00E5FF"
+      },
+      {
+        "nome": "Roxo Neon",
+        "hex": "#A12BFF"
+      }
+    ],
+    "Synthwave / VHS": [
+      {
+        "nome": "Magenta VHS",
+        "hex": "#FF00B8"
+      },
+      {
+        "nome": "Coral Sunset",
+        "hex": "#FF637D"
+      },
+      {
+        "nome": "Pôr do Sol",
+        "hex": "#FF9966"
+      },
+      {
+        "nome": "Lavanda Laser",
+        "hex": "#C77DFF"
+      },
+      {
+        "nome": "Azul Horizonte",
+        "hex": "#3A86FF"
+      },
+      {
+        "nome": "Turquesa Wave",
+        "hex": "#27F5CF"
+      }
+    ],
+    "Pixel / 8-bit": [
+      {
+        "nome": "Vermelho Player 1",
+        "hex": "#F94144"
+      },
+      {
+        "nome": "Laranja Power-Up",
+        "hex": "#FB5607"
+      },
+      {
+        "nome": "Ouro Pixel",
+        "hex": "#FFBE0B"
+      },
+      {
+        "nome": "Verde Slime",
+        "hex": "#8AC926"
+      },
+      {
+        "nome": "Azul Cartridge",
+        "hex": "#4361EE"
+      },
+      {
+        "nome": "Roxo Chefão",
+        "hex": "#8338EC"
+      }
+    ],
+    "Retro Pop": [
+      {
+        "nome": "Rosa Chiclete",
+        "hex": "#FF5DA2"
+      },
+      {
+        "nome": "Vermelho Cereja",
+        "hex": "#E63946"
+      },
+      {
+        "nome": "Amarelo Solar",
+        "hex": "#FFD166"
+      },
+      {
+        "nome": "Verde Menta",
+        "hex": "#06D6A0"
+      },
+      {
+        "nome": "Azul Piscina",
+        "hex": "#00B4D8"
+      },
+      {
+        "nome": "Laranja Retrô",
+        "hex": "#F3722C"
+      }
+    ]
+  },
+  "identidade": {
+    "turquesa": "#19D8BD",
+    "petroleo": "#117F94",
+    "coral": "#FF514D",
+    "laranja": "#FF8B3E",
+    "papel": "#FFFFFF",
+    "tinta": "#202020"
+  },
+  "bases_ui": {
+    "card_jogo": "#2B2B2B",
+    "fundo_principal": "#181818",
+    "fundo_card": "#222222",
+    "borda": "#3A3A3A",
+    "texto": "#F8FAF8"
+  },
+  "bases_ui_claro": {
+    "card_jogo": "#E8E8E8",
+    "fundo_principal": "#F0F0F0",
+    "fundo_card": "#FFFFFF",
+    "borda": "#CCCCCC",
+    "texto": "#202020"
+  }
+}

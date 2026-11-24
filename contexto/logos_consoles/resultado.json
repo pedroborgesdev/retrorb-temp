@@ -1,0 +1,930 @@
+[
+  {
+    "console": "3DO Interactive Multiplayer",
+    "status": "baixado",
+    "arquivo": "logos_consoles/3do_interactive_multiplayer.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/3DO%20Interactive%20Multiplayer.png",
+    "dimensoes": [
+      1921,
+      608
+    ]
+  },
+  {
+    "console": "Amstrad GX4000",
+    "status": "baixado",
+    "arquivo": "logos_consoles/amstrad_gx4000.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Amstrad%20GX4000.png",
+    "dimensoes": [
+      1920,
+      503
+    ]
+  },
+  {
+    "console": "Apple II",
+    "status": "baixado",
+    "arquivo": "logos_consoles/apple_ii.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Apple%20II.png",
+    "dimensoes": [
+      1934,
+      611
+    ]
+  },
+  {
+    "console": "Arcade MAME",
+    "status": "baixado",
+    "arquivo": "logos_consoles/arcade_mame.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/MAME.png",
+    "dimensoes": [
+      1921,
+      550
+    ]
+  },
+  {
+    "console": "Atari 2600",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_2600.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%202600.png",
+    "dimensoes": [
+      1921,
+      418
+    ]
+  },
+  {
+    "console": "Atari 5200",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_5200.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%205200.png",
+    "dimensoes": [
+      1921,
+      416
+    ]
+  },
+  {
+    "console": "Atari 7800",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_7800.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%207800.png",
+    "dimensoes": [
+      1921,
+      389
+    ]
+  },
+  {
+    "console": "Atari 8-bit",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Atari Jaguar",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_jaguar.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%20Jaguar.png",
+    "dimensoes": [
+      1920,
+      859
+    ]
+  },
+  {
+    "console": "Atari Jaguar CD",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_jaguar_cd.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%20Jaguar%20CD.png",
+    "dimensoes": [
+      1920,
+      966
+    ]
+  },
+  {
+    "console": "Atari Lynx",
+    "status": "baixado",
+    "arquivo": "logos_consoles/atari_lynx.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Atari%20Lynx.png",
+    "dimensoes": [
+      1920,
+      293
+    ]
+  },
+  {
+    "console": "Bandai SwanCrystal",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Bandai WonderSwan",
+    "status": "baixado",
+    "arquivo": "logos_consoles/bandai_wonderswan.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/WonderSwan.png",
+    "dimensoes": [
+      1920,
+      247
+    ]
+  },
+  {
+    "console": "Bandai WonderSwan Color",
+    "status": "baixado",
+    "arquivo": "logos_consoles/bandai_wonderswan_color.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Wonderswan%20Color.png",
+    "dimensoes": [
+      1920,
+      375
+    ]
+  },
+  {
+    "console": "ColecoVision",
+    "status": "baixado",
+    "arquivo": "logos_consoles/colecovision.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/ColecoVision.png",
+    "dimensoes": [
+      1920,
+      628
+    ]
+  },
+  {
+    "console": "Commodore 64",
+    "status": "baixado",
+    "arquivo": "logos_consoles/commodore_64.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Commodore%2064.png",
+    "dimensoes": [
+      1920,
+      590
+    ]
+  },
+  {
+    "console": "Commodore Amiga",
+    "status": "baixado",
+    "arquivo": "logos_consoles/commodore_amiga.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Commodore%20Amiga.png",
+    "dimensoes": [
+      1920,
+      629
+    ]
+  },
+  {
+    "console": "Fairchild Channel F",
+    "status": "baixado",
+    "arquivo": "logos_consoles/fairchild_channel_f.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Fairchild%20Channel%20F.png",
+    "dimensoes": [
+      1920,
+      632
+    ]
+  },
+  {
+    "console": "Intellivision",
+    "status": "baixado",
+    "arquivo": "logos_consoles/intellivision.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Mattel%20Intellivision.png",
+    "dimensoes": [
+      1920,
+      296
+    ]
+  },
+  {
+    "console": "Magnavox Odyssey",
+    "status": "baixado",
+    "arquivo": "logos_consoles/magnavox_odyssey.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Magnavox%20Odyssey.png",
+    "dimensoes": [
+      1920,
+      602
+    ]
+  },
+  {
+    "console": "Magnavox Odyssey 2",
+    "status": "baixado",
+    "arquivo": "logos_consoles/magnavox_odyssey_2.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Magnavox%20Odyssey%202.png",
+    "dimensoes": [
+      1920,
+      585
+    ]
+  },
+  {
+    "console": "Microsoft Xbox",
+    "status": "baixado",
+    "arquivo": "logos_consoles/microsoft_xbox.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Microsoft%20Xbox.png",
+    "dimensoes": [
+      1920,
+      483
+    ]
+  },
+  {
+    "console": "Microsoft Xbox 360",
+    "status": "baixado",
+    "arquivo": "logos_consoles/microsoft_xbox_360.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Microsoft%20Xbox%20360.png",
+    "dimensoes": [
+      1920,
+      399
+    ]
+  },
+  {
+    "console": "Microsoft Xbox One",
+    "status": "baixado",
+    "arquivo": "logos_consoles/microsoft_xbox_one.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Microsoft%20Xbox%20One.png",
+    "dimensoes": [
+      1920,
+      392
+    ]
+  },
+  {
+    "console": "Microsoft Xbox Series S",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Microsoft Xbox Series X",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "MSX",
+    "status": "baixado",
+    "arquivo": "logos_consoles/msx.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Microsoft%20MSX.png",
+    "dimensoes": [
+      1921,
+      802
+    ]
+  },
+  {
+    "console": "MSX2",
+    "status": "baixado",
+    "arquivo": "logos_consoles/msx2.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Microsoft MSX2+.png",
+    "dimensoes": [
+      1921,
+      540
+    ]
+  },
+  {
+    "console": "NEC PC Engine",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nec_pc_engine.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC%20Engine.png",
+    "dimensoes": [
+      1920,
+      981
+    ]
+  },
+  {
+    "console": "NEC PC Engine CD",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nec_pc_engine_cd.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC%20Engine%20CD.png",
+    "dimensoes": [
+      1920,
+      655
+    ]
+  },
+  {
+    "console": "NEC PC-FX",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nec_pc_fx.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC-FX.png",
+    "dimensoes": [
+      1920,
+      669
+    ]
+  },
+  {
+    "console": "NEC SuperGrafx",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nec_supergrafx.png",
+    "fonte": "Monochrome Gaming Logos",
+    "url": "https://raw.githubusercontent.com/HVR88/Monochrome-Gaming-Logos/main/png/nec_pcengine_supergrafx.png",
+    "dimensoes": [
+      600,
+      319
+    ]
+  },
+  {
+    "console": "New Nintendo 2DS XL",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "New Nintendo 3DS",
+    "status": "baixado",
+    "arquivo": "logos_consoles/new_nintendo_3ds.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/New%20Nintendo%203DS.png",
+    "dimensoes": [
+      1920,
+      443
+    ]
+  },
+  {
+    "console": "New Nintendo 3DS XL",
+    "status": "baixado",
+    "arquivo": "logos_consoles/new_nintendo_3ds_xl.png",
+    "fonte": "Monochrome Gaming Logos",
+    "url": "https://raw.githubusercontent.com/HVR88/Monochrome-Gaming-Logos/main/png/nintendo_3ds_xl_new.png",
+    "dimensoes": [
+      600,
+      120
+    ]
+  },
+  {
+    "console": "Nintendo 2DS",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_2ds.png",
+    "fonte": "Monochrome Gaming Logos",
+    "url": "https://raw.githubusercontent.com/HVR88/Monochrome-Gaming-Logos/main/png/nintendo_2ds.png",
+    "dimensoes": [
+      600,
+      74
+    ]
+  },
+  {
+    "console": "Nintendo 3DS",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_3ds.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%203DS.png",
+    "dimensoes": [
+      1920,
+      236
+    ]
+  },
+  {
+    "console": "Nintendo 3DS XL",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_3ds_xl.png",
+    "fonte": "Monochrome Gaming Logos",
+    "url": "https://raw.githubusercontent.com/HVR88/Monochrome-Gaming-Logos/main/png/nintendo_3ds_xl.png",
+    "dimensoes": [
+      600,
+      64
+    ]
+  },
+  {
+    "console": "Nintendo 64",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_64.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%2064.png",
+    "dimensoes": [
+      1921,
+      430
+    ]
+  },
+  {
+    "console": "Nintendo DS",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_ds.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20DS.png",
+    "dimensoes": [
+      1921,
+      276
+    ]
+  },
+  {
+    "console": "Nintendo DS Lite",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Nintendo DSi",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_dsi.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20DSi.png",
+    "dimensoes": [
+      1920,
+      299
+    ]
+  },
+  {
+    "console": "Nintendo Entertainment System",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_entertainment_system.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Entertainment%20System.png",
+    "dimensoes": [
+      1920,
+      764
+    ]
+  },
+  {
+    "console": "Nintendo Famicom",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_famicom.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Famicom.png",
+    "dimensoes": [
+      1920,
+      424
+    ]
+  },
+  {
+    "console": "Nintendo Famicom Disk System",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_famicom_disk_system.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Famicom%20Disk%20System.png",
+    "dimensoes": [
+      1920,
+      348
+    ]
+  },
+  {
+    "console": "Nintendo Game & Watch",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_game_and_watch.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20%26%20Watch.png",
+    "dimensoes": [
+      1921,
+      448
+    ]
+  },
+  {
+    "console": "Nintendo Game Boy",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_game_boy.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy.png",
+    "dimensoes": [
+      1921,
+      342
+    ]
+  },
+  {
+    "console": "Nintendo Game Boy Advance",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_game_boy_advance.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy%20Advance.png",
+    "dimensoes": [
+      1920,
+      224
+    ]
+  },
+  {
+    "console": "Nintendo Game Boy Advance SP",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Nintendo Game Boy Color",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_game_boy_color.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy%20Color.png",
+    "dimensoes": [
+      1920,
+      232
+    ]
+  },
+  {
+    "console": "Nintendo Game Boy Micro",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Nintendo Game Boy Pocket",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Nintendo GameCube",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_gamecube.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20GameCube.png",
+    "dimensoes": [
+      1920,
+      439
+    ]
+  },
+  {
+    "console": "Nintendo Pokemon Mini",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_pokemon_mini.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo Pokémon Mini.png",
+    "dimensoes": [
+      1920,
+      303
+    ]
+  },
+  {
+    "console": "Nintendo Switch",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_switch.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Switch.png",
+    "dimensoes": [
+      1920,
+      422
+    ]
+  },
+  {
+    "console": "Nintendo Switch 2",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Nintendo Virtual Boy",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_virtual_boy.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Virtual%20Boy.png",
+    "dimensoes": [
+      1920,
+      532
+    ]
+  },
+  {
+    "console": "Nintendo Wii",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_wii.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Wii.png",
+    "dimensoes": [
+      1920,
+      919
+    ]
+  },
+  {
+    "console": "Nintendo Wii U",
+    "status": "baixado",
+    "arquivo": "logos_consoles/nintendo_wii_u.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Wii%20U.png",
+    "dimensoes": [
+      1920,
+      578
+    ]
+  },
+  {
+    "console": "Philips CD-i",
+    "status": "baixado",
+    "arquivo": "logos_consoles/philips_cd_i.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Philips%20CD-i.png",
+    "dimensoes": [
+      1920,
+      274
+    ]
+  },
+  {
+    "console": "Sega 32X",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_32x.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%2032X.png",
+    "dimensoes": [
+      1920,
+      475
+    ]
+  },
+  {
+    "console": "Sega CD",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_cd.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20CD.png",
+    "dimensoes": [
+      1920,
+      279
+    ]
+  },
+  {
+    "console": "Sega Dreamcast",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_dreamcast.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Dreamcast.png",
+    "dimensoes": [
+      1920,
+      330
+    ]
+  },
+  {
+    "console": "Sega Game Gear",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_game_gear.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Sega%20Game%20Gear.png",
+    "dimensoes": [
+      1920,
+      246
+    ]
+  },
+  {
+    "console": "Sega Genesis",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_genesis.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Genesis.png",
+    "dimensoes": [
+      3841,
+      946
+    ]
+  },
+  {
+    "console": "Sega Master System",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_master_system.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Master%20System.png",
+    "dimensoes": [
+      1920,
+      596
+    ]
+  },
+  {
+    "console": "Sega Mega Drive",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_mega_drive.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Genesis.png",
+    "dimensoes": [
+      3841,
+      946
+    ]
+  },
+  {
+    "console": "Sega Model 2",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_model_2.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/Sega%20Model%202.png",
+    "dimensoes": [
+      1920,
+      1034
+    ]
+  },
+  {
+    "console": "Sega Model 3",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_model_3.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/Sega%20Model%203%20.png",
+    "dimensoes": [
+      1920,
+      716
+    ]
+  },
+  {
+    "console": "Sega Naomi",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_naomi.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/Sega%20Naomi.png",
+    "dimensoes": [
+      1920,
+      751
+    ]
+  },
+  {
+    "console": "Sega Nomad",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Sega Pico",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_pico.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Sega%20Pico.png",
+    "dimensoes": [
+      1920,
+      837
+    ]
+  },
+  {
+    "console": "Sega Saturn",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_saturn.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Saturn.png",
+    "dimensoes": [
+      1998,
+      313
+    ]
+  },
+  {
+    "console": "Sega SG-1000",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sega_sg_1000.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20SG-1000.png",
+    "dimensoes": [
+      1920,
+      509
+    ]
+  },
+  {
+    "console": "SNK Neo Geo AES",
+    "status": "baixado",
+    "arquivo": "logos_consoles/snk_neo_geo_aes.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/White%20Outline%20Versions/Thick%20Outlines/Consoles/SNK%20Neo%20Geo%20AES.png",
+    "dimensoes": [
+      1920,
+      628
+    ]
+  },
+  {
+    "console": "SNK Neo Geo CD",
+    "status": "baixado",
+    "arquivo": "logos_consoles/snk_neo_geo_cd.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/SNK%20Neo%20Geo%20CD.png",
+    "dimensoes": [
+      1920,
+      701
+    ]
+  },
+  {
+    "console": "SNK Neo Geo MVS",
+    "status": "baixado",
+    "arquivo": "logos_consoles/snk_neo_geo_mvs.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/SNK%20Neo%20Geo%20MVS.png",
+    "dimensoes": [
+      1920,
+      694
+    ]
+  },
+  {
+    "console": "SNK Neo Geo Pocket",
+    "status": "baixado",
+    "arquivo": "logos_consoles/snk_neo_geo_pocket.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/SNK%20Neo%20Geo%20Pocket.png",
+    "dimensoes": [
+      1921,
+      428
+    ]
+  },
+  {
+    "console": "SNK Neo Geo Pocket Color",
+    "status": "baixado",
+    "arquivo": "logos_consoles/snk_neo_geo_pocket_color.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/SNK%20Neo%20Geo%20Pocket%20Color.png",
+    "dimensoes": [
+      1921,
+      545
+    ]
+  },
+  {
+    "console": "Sony PlayStation",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation.png",
+    "dimensoes": [
+      1920,
+      377
+    ]
+  },
+  {
+    "console": "Sony PlayStation 2",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation_2.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%202.png",
+    "dimensoes": [
+      1920,
+      608
+    ]
+  },
+  {
+    "console": "Sony PlayStation 3",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation_3.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%203.png",
+    "dimensoes": [
+      1920,
+      699
+    ]
+  },
+  {
+    "console": "Sony PlayStation 4",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation_4.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%204.png",
+    "dimensoes": [
+      1920,
+      417
+    ]
+  },
+  {
+    "console": "Sony PlayStation 5",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation_5.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%205.png",
+    "dimensoes": [
+      1920,
+      434
+    ]
+  },
+  {
+    "console": "Sony PlayStation Classic",
+    "status": "nao_encontrado"
+  },
+  {
+    "console": "Sony PlayStation Vita",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_playstation_vita.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/White%20Outline%20Versions/Thick%20Outlines/Handhelds/Sony%20Playstation%20Vita.png",
+    "dimensoes": [
+      1920,
+      353
+    ]
+  },
+  {
+    "console": "Sony PocketStation",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_pocketstation.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Sony%20PocketStation.png",
+    "dimensoes": [
+      1920,
+      969
+    ]
+  },
+  {
+    "console": "Sony PSP",
+    "status": "baixado",
+    "arquivo": "logos_consoles/sony_psp.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Sony%20PSP.png",
+    "dimensoes": [
+      1920,
+      627
+    ]
+  },
+  {
+    "console": "Super Famicom",
+    "status": "baixado",
+    "arquivo": "logos_consoles/super_famicom.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Super%20Famicom.png",
+    "dimensoes": [
+      1920,
+      292
+    ]
+  },
+  {
+    "console": "Super Nintendo",
+    "status": "baixado",
+    "arquivo": "logos_consoles/super_nintendo.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Super%20Nintendo%20Entertainment%20System.png",
+    "dimensoes": [
+      1920,
+      510
+    ]
+  },
+  {
+    "console": "Vectrex",
+    "status": "baixado",
+    "arquivo": "logos_consoles/vectrex.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/GCE%20Vectrex.png",
+    "dimensoes": [
+      1920,
+      501
+    ]
+  },
+  {
+    "console": "ZX Spectrum",
+    "status": "baixado",
+    "arquivo": "logos_consoles/zx_spectrum.png",
+    "fonte": "Dan Patrick (coloridas)",
+    "url": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Sinclair%20ZX%20Spectrum.png",
+    "dimensoes": [
+      1920,
+      619
+    ]
+  }
+]

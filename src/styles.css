@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Tailwind entry point and shared design tokens; no component CSS. */
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-canvas: var(--retro-canvas);
+  --color-sidebar: var(--retro-sidebar);
+  --color-brand-surface: var(--retro-brand-surface);
+  --color-surface: var(--retro-surface);
+  --color-hover: var(--retro-hover);
+  --color-inset: var(--retro-inset);
+  --color-line: var(--retro-line);
+  --color-ink: var(--retro-ink);
+  --color-muted: var(--retro-muted);
+  --color-accent: var(--retro-accent);
+  --color-on-accent: var(--retro-on-accent);
+  --color-success: var(--retro-success);
+  --color-danger: var(--retro-danger);
+  --color-paper: var(--retro-paper);
+  --color-brand-ink: var(--retro-brand-ink);
+  --color-brand-teal: var(--retro-teal);
+  --color-brand-coral: var(--retro-coral);
+  --color-brand-orange: var(--retro-orange);
+  --color-brand-gold: var(--retro-gold);
+  --spacing-sidebar: 220px;
+}

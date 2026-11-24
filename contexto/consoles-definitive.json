@@ -1,0 +1,6175 @@
+{
+  "consoles": [
+    {
+      "name": "3DO",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/3DO%20Interactive%20Multiplayer.png",
+      "correlative_names": [
+        "3DO",
+        "3DO Interactive Multiplayer"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "3DO",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9174"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "3DO Interactive Multiplayer",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "9351",
+              "console_opts[]": "9351"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acorn 8 bit",
+      "image": null,
+      "correlative_names": [
+        "Acorn 8 bit"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Acorn 8 bit",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/acorn-8-bit/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acorn Archimedes",
+      "image": null,
+      "correlative_names": [
+        "Acorn Archimedes"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Acorn Archimedes",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/acorn-archimedes/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Acorn Archimedes",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/acorn%2Barchimedes",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acorn Atom",
+      "image": null,
+      "correlative_names": [
+        "Acorn Atom"
+      ],
+      "providers": [
+        {
+          "name": "wowroms",
+          "console_name": "Acorn Atom",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/acorn%2Batom",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acorn Electron",
+      "image": null,
+      "correlative_names": [
+        "Acorn Electron"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Acorn Electron",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/acorn-electron/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Acorn Electron",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/acorn%2Belectron",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amiga",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Commodore%20Amiga.png",
+      "correlative_names": [
+        "Amiga",
+        "Commodore - Amiga"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Commodore - Amiga",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "15341"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Amiga",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/amiga",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amiga 500",
+      "image": null,
+      "correlative_names": [
+        "Amiga 500"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Amiga 500",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/amiga-500/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amstrad CPC",
+      "image": null,
+      "correlative_names": [
+        "AMSTRAD CPC",
+        "Amstrad CPC"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Amstrad CPC",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/amstrad-cpc/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "AMSTRAD CPC",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/amstrad%2Bcpc",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amstrad GX4000",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Amstrad%20GX4000.png",
+      "correlative_names": [
+        "Amstrad GX4000"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Amstrad GX4000",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/amstrad-gx4000/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Apple I",
+      "image": null,
+      "correlative_names": [
+        "Apple 1",
+        "Apple I"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Apple 1",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/apple-1/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Apple I",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/apple%2Bi",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Apple II",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Apple%20II.png",
+      "correlative_names": [
+        "Apple II"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Apple II",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/apple-ii/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Apple II",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/apple%2Bii",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Apple II GS",
+      "image": null,
+      "correlative_names": [
+        "Apple II GS"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Apple II GS",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/apple-ii-gs/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Apple II GS",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/apple%2Bii%2Bgs",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari 2600",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%202600.png",
+      "correlative_names": [
+        "Atari 2600"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Atari 2600",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "16629"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Atari 2600",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-2600/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari 2600",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2B2600",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari 5200",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%205200.png",
+      "correlative_names": [
+        "Atari 5200",
+        "Atari 5200 SuperSystem"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Atari 5200 SuperSystem",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-5200-supersystem/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari 5200",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2B5200",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari 7800",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%207800.png",
+      "correlative_names": [
+        "Atari 7800",
+        "Atari 7800 ProSystem"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Atari 7800",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "28299"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Atari 7800 ProSystem",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-7800-prosystem/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari 7800",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2B7800",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari 800",
+      "image": null,
+      "correlative_names": [
+        "Atari 800"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Atari 800",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-800/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari 800",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2B800",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari Jaguar",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Atari%20Jaguar.png",
+      "correlative_names": [
+        "Atari Jaguar"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Atari Jaguar",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "20428"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Atari Jaguar",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-jaguar/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari Jaguar",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2Bjaguar",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari Lynx",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Atari%20Lynx.png",
+      "correlative_names": [
+        "Atari Lynx"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Atari Lynx",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-lynx/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari Lynx",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2Blynx",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atari ST",
+      "image": null,
+      "correlative_names": [
+        "Atari ST"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Atari ST",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/atari-st/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Atari ST",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/atari%2Bst",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bally Pro Arcade Astrocade",
+      "image": null,
+      "correlative_names": [
+        "Bally Pro Arcade Astrocade"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Bally Pro Arcade Astrocade",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/bally-pro-arcade-astrocade/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "BBC Micro",
+      "image": null,
+      "correlative_names": [
+        "Acorn BBC Micro",
+        "BBC Micro"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "BBC Micro",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/bbc-micro/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Acorn BBC Micro",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/acorn%2Bbbc%2Bmicro",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Camputers Lynx",
+      "image": null,
+      "correlative_names": [
+        "Camputers Lynx"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Camputers Lynx",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/camputers-lynx/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Capcom Play System 1",
+      "image": null,
+      "correlative_names": [
+        "Capcom Play System",
+        "Capcom Play System 1"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Capcom Play System",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/capcom-play-system/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Capcom Play System 1",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B1",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Capcom Play System 2",
+      "image": null,
+      "correlative_names": [
+        "Capcom Play System 2"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Capcom Play System 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/capcom-play-system-2/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Capcom Play System 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B2",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Capcom Play System 3",
+      "image": null,
+      "correlative_names": [
+        "Capcom Play System 3"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Capcom Play System 3",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/capcom-play-system-3/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Capcom Play System 3",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B3",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Casio Loopy",
+      "image": null,
+      "correlative_names": [
+        "Casio Loopy"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Casio Loopy",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/casio-loopy/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Casio PV1000",
+      "image": null,
+      "correlative_names": [
+        "Casio PV1000"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Casio PV1000",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/casio-pv1000/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ColecoVision",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/ColecoVision.png",
+      "correlative_names": [
+        "ColecoVision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "ColecoVision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/colecovision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ColecoVision ADAM",
+      "image": null,
+      "correlative_names": [
+        "ColecoVision ADAM"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "ColecoVision ADAM",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/colecovision-adam/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commodore 64",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Commodore%2064.png",
+      "correlative_names": [
+        "Commodore 64"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Commodore 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/commodore-64/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Commodore 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/commodore%2B64",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commodore Max Machine",
+      "image": null,
+      "correlative_names": [
+        "Commodore Max Machine"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Commodore Max Machine",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/commodore-max-machine/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commodore Pet",
+      "image": null,
+      "correlative_names": [
+        "Commodore Pet"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Commodore Pet",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/commodore-pet/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commodore Plus4 C16",
+      "image": null,
+      "correlative_names": [
+        "Commodore Plus4 C16"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Commodore Plus4 C16",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/commodore-plus4-c16/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Commodore VIC20",
+      "image": null,
+      "correlative_names": [
+        "Commodore VIC20"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Commodore VIC20",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/commodore-vic20/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dragon Data Dragon",
+      "image": null,
+      "correlative_names": [
+        "Dragon Data Dragon"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Dragon Data Dragon",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/dragon-data-dragon/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Elektronika BK",
+      "image": null,
+      "correlative_names": [
+        "Elektronika BK"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Elektronika BK",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/elektronika-bk/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Emerson Arcadia 2001",
+      "image": null,
+      "correlative_names": [
+        "Emerson Arcadia 2001"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Emerson Arcadia 2001",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/emerson-arcadia-2001/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Entex Adventure Vision",
+      "image": null,
+      "correlative_names": [
+        "Entex Adventure Vision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Entex Adventure Vision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/entex-adventure-vision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Epoch Super Cassette Vision",
+      "image": null,
+      "correlative_names": [
+        "Epoch Super Cassette Vision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Epoch Super Cassette Vision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/epoch-super-cassette-vision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fairchild Channel F",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Fairchild%20Channel%20F.png",
+      "correlative_names": [
+        "Fairchild Channel F"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Fairchild Channel F",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/fairchild-channel-f/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Fujitsu FM Towns Marty",
+      "image": null,
+      "correlative_names": [
+        "Fujitsu FM Towns Marty"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Fujitsu FM Towns Marty",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "16124"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Fujitsu FM Towns Marty",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "10573",
+              "console_opts[]": "10573"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Funtech Super Acan",
+      "image": null,
+      "correlative_names": [
+        "Funtech Super Acan"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Funtech Super Acan",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/funtech-super-acan/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Future Pinball",
+      "image": null,
+      "correlative_names": [
+        "Future Pinball"
+      ],
+      "providers": [
+        {
+          "name": "wowroms",
+          "console_name": "Future Pinball",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/future%2Bpinball",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Galaksija",
+      "image": null,
+      "correlative_names": [
+        "Galaksija"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Galaksija",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/galaksija/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Game Boy",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy.png",
+      "correlative_names": [
+        "Game Boy",
+        "Game Boy (GB)",
+        "Gameboy",
+        "Nintendo Game Boy",
+        "Nintendo Gameboy"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Game Boy (GB)",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "95"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo Game Boy",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "6651",
+              "console_opts[]": "6651"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Gameboy",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gameboy/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Gameboy",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Game Boy Advance",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy%20Advance.png",
+      "correlative_names": [
+        "Game Boy Advance",
+        "Gameboy Advance",
+        "GBA",
+        "Nintendo Game Boy Advance",
+        "Nintendo Gameboy Advance"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "GBA",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "4"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo Game Boy Advance",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "6822",
+              "console_opts[]": "6822"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Gameboy Advance",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gameboy-advance/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Gameboy Advance",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy%2Badvance",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Game Boy Color",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Game%20Boy%20Color.png",
+      "correlative_names": [
+        "Game Boy Color",
+        "Gameboy Color",
+        "Nintendo Game Boy Color",
+        "Nintendo Gameboy Color"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Game Boy Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "11"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo Game Boy Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "7277",
+              "console_opts[]": "7277"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Gameboy Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gameboy-color/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Gameboy Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy%2Bcolor",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "GamePark GP32",
+      "image": null,
+      "correlative_names": [
+        "GamePark GP32"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "GamePark GP32",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19255"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "GamePark GP32",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gamepark-gp32/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "GCE Vectrex",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/GCE%20Vectrex.png",
+      "correlative_names": [
+        "GCE Vectrex"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "GCE Vectrex",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gce-vectrex/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Hartung Game Master",
+      "image": null,
+      "correlative_names": [
+        "Hartung Game Master"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Hartung Game Master",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/hartung-game-master/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Intellivision",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Mattel%20Intellivision.png",
+      "correlative_names": [
+        "Intellivision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Intellivision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/intellivision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Interact Family Computer",
+      "image": null,
+      "correlative_names": [
+        "Interact Family Computer"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Interact Family Computer",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/interact-family-computer/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "J2ME",
+      "image": null,
+      "correlative_names": [
+        "J2ME"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "J2ME",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19132"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kaypro II",
+      "image": null,
+      "correlative_names": [
+        "Kaypro II"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Kaypro II",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/kaypro-ii/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Luxor ABC 800",
+      "image": null,
+      "correlative_names": [
+        "Luxor ABC 800"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Luxor ABC 800",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/luxor-abc-800/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Magnavox Odyssey 2 / Philips Videopac",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Magnavox%20Odyssey%202.png",
+      "correlative_names": [
+        "Magnavox Odyssey 2",
+        "Magnavox Odyssey 2 / Philips Videopac",
+        "Philips Videopac"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Magnavox Odyssey 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/magnavox-odyssey-2/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Philips Videopac",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/philips-videopac/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MAME",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/MAME.png",
+      "correlative_names": [
+        "MAME"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "MAME",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "14211"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "MAME",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "14677",
+              "console_opts[]": "14677"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "MAME",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/mame",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MAME 0.139u1",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/MAME.png",
+      "correlative_names": [
+        "MAME 0.139u1"
+      ],
+      "providers": [
+        {
+          "name": "wowroms",
+          "console_name": "MAME 0.139u1",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/mame%2B0.139u1",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MAME 0.37b11",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/MAME.png",
+      "correlative_names": [
+        "MAME 0.37b11",
+        "MAME 037b11"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "MAME 037b11",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/mame-037b11/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MAME 0.37b5",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/MAME.png",
+      "correlative_names": [
+        "MAME 0.37b5"
+      ],
+      "providers": [
+        {
+          "name": "wowroms",
+          "console_name": "MAME 0.37b5",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/mame%2B0.37b5",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mattel Aquarius",
+      "image": null,
+      "correlative_names": [
+        "Mattel Aquarius"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Mattel Aquarius",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/mattel-aquarius/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Memotech MTX512",
+      "image": null,
+      "correlative_names": [
+        "Memotech MTX512"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Memotech MTX512",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/memotech-mtx512/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Miles Gordon Sam Coupe",
+      "image": null,
+      "correlative_names": [
+        "Miles Gordon Sam Coupe"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Miles Gordon Sam Coupe",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/miles-gordon-sam-coupe/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MS-DOS",
+      "image": null,
+      "correlative_names": [
+        "DOS",
+        "MS-DOS"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "MS-DOS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19282"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "DOS",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/dos",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MSX",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Microsoft%20MSX.png",
+      "correlative_names": [
+        "Microsoft MSX",
+        "MSX",
+        "MSX Computer"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Microsoft MSX",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "15524"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "MSX Computer",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/msx-computer/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MSX2",
+      "image": null,
+      "correlative_names": [
+        "Microsoft MSX2",
+        "MSX-2",
+        "MSX2"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Microsoft MSX2",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "13048"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "MSX-2",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/msx-2/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MUGEN",
+      "image": null,
+      "correlative_names": [
+        "MUGEN"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "MUGEN",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "20570"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NEC PC-9801",
+      "image": null,
+      "correlative_names": [
+        "NEC PC-9801"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "NEC PC-9801",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18747"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NEC PC-FX",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC-FX.png",
+      "correlative_names": [
+        "NEC PC-FX"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "NEC PC-FX",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18060"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neo Geo",
+      "image": null,
+      "correlative_names": [
+        "Neo Geo",
+        "SNK Neo Geo"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Neo Geo",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9922"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "SNK Neo Geo",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/snk-neo-geo/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Neo Geo",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/neo%2Bgeo",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neo Geo AES",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/White%20Outline%20Versions/Thick%20Outlines/Consoles/SNK%20Neo%20Geo%20AES.png",
+      "correlative_names": [
+        "Neo Geo AES",
+        "SNK Neo Geo AES"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Neo Geo AES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18040"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "SNK Neo Geo AES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "1682",
+              "console_opts[]": "1682"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neo Geo CD",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/SNK%20Neo%20Geo%20CD.png",
+      "correlative_names": [
+        "Neo Geo CD"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Neo Geo CD",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "17973"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neo Geo Pocket",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/SNK%20Neo%20Geo%20Pocket.png",
+      "correlative_names": [
+        "Neo Geo Pocket"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Neo Geo Pocket",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/neo-geo-pocket/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Neo Geo Pocket",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/neo%2Bgeo%2Bpocket",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Neo Geo Pocket Color",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/SNK%20Neo%20Geo%20Pocket%20Color.png",
+      "correlative_names": [
+        "Neo Geo Pocket Color"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Neo Geo Pocket Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18735"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Neo Geo Pocket Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/neo-geo-pocket-color/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Neo Geo Pocket Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/neo%2Bgeo%2Bpocket%2Bcolor",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo 3DS",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%203DS.png",
+      "correlative_names": [
+        "Nintendo 3DS"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo 3DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "91"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo 3DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "5996",
+              "console_opts[]": "5996"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo 3DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-3ds/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo 64",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%2064.png",
+      "correlative_names": [
+        "Nintendo 64"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "6206",
+              "console_opts[]": "6206"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-64/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo 64",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2B64",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo DS",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20DS.png",
+      "correlative_names": [
+        "Nintendo DS"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "3"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "6276",
+              "console_opts[]": "6276"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-ds/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo DS",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bds",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Entertainment System",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Entertainment%20System.png",
+      "correlative_names": [
+        "NES",
+        "Nintendo",
+        "Nintendo Entertainment System"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "NES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "12"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "NES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "10105",
+              "console_opts[]": "10105"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Entertainment System",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bentertainment%2Bsystem",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Famicom Disk System",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Famicom%20Disk%20System.png",
+      "correlative_names": [
+        "FDS",
+        "Nintendo Famicom Disk System"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "FDS",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "35067"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo Famicom Disk System",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-famicom-disk-system/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Famicom Disk System",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bfamicom%2Bdisk%2Bsystem",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo GameCube",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20GameCube.png",
+      "correlative_names": [
+        "GameCube",
+        "Nintendo GameCube"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "GameCube",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "13"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo GameCube",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "7392",
+              "console_opts[]": "7392"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "GameCube",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/gamecube/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Pokemon Mini",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Nintendo%20Pok%C3%A9mon%20Mini.png",
+      "correlative_names": [
+        "Nintendo Pokemon Mini"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo Pokemon Mini",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19197"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo Pokemon Mini",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-pokemon-mini/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Virtual Boy",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Virtual%20Boy.png",
+      "correlative_names": [
+        "Nintendo Virtual Boy"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo Virtual Boy",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "16610"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo Virtual Boy",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-virtual-boy/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nintendo Virtual Boy",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nintendo%2Bvirtual%2Bboy",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Wii",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Wii.png",
+      "correlative_names": [
+        "Nintendo Wii"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nintendo Wii",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "10"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo Wii",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "7429",
+              "console_opts[]": "7429"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nintendo Wii",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nintendo-wii/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nintendo Wii U",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Nintendo%20Wii%20U.png",
+      "correlative_names": [
+        "Nintendo Wii U",
+        "Wii U"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Wii U",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "86"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Nintendo Wii U",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "7841",
+              "console_opts[]": "7841"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nokia N-Gage",
+      "image": null,
+      "correlative_names": [
+        "Nokia N Gage",
+        "Nokia N-Gage"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Nokia N-Gage",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "16035"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Nokia N Gage",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/nokia-n-gage/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Nokia N Gage",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/nokia%2Bn%2Bgage",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "OpenBOR",
+      "image": null,
+      "correlative_names": [
+        "OpenBOR"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "OpenBOR",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19630"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "image": null,
+      "correlative_names": [
+        "Other"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Other",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "20467"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ouya",
+      "image": null,
+      "correlative_names": [
+        "Ouya"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Ouya",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "12883"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pel Varazdin Orao",
+      "image": null,
+      "correlative_names": [
+        "Pel Varazdin Orao"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Pel Varazdin Orao",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/pel-varazdin-orao/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Philips CD-i",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Philips%20CD-i.png",
+      "correlative_names": [
+        "Philips CD-i"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Philips CD-i",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9362"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation.png",
+      "correlative_names": [
+        "PlayStation",
+        "Playstation",
+        "PlayStation (PS)",
+        "Sony Playstation"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PlayStation (PS)",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "7"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sony Playstation",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "1737",
+              "console_opts[]": "1737"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Playstation",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/playstation/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Playstation",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/Playstation",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation 2",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%202.png",
+      "correlative_names": [
+        "PlayStation 2",
+        "Playstation 2",
+        "PS2"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PS2",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "8"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "PS2",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "2990",
+              "console_opts[]": "2990"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Playstation 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/playstation-2/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Playstation 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/playstation%2B2",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation 3",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%203.png",
+      "correlative_names": [
+        "PlayStation 3",
+        "PS3",
+        "Sony Playstation 3"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PS3",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "15"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sony Playstation 3",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "3913",
+              "console_opts[]": "3913"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation 4",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sony%20Playstation%204.png",
+      "correlative_names": [
+        "PlayStation 4",
+        "PS4",
+        "Sony Playstation 4"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PS4",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "87"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sony Playstation 4",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "4628",
+              "console_opts[]": "4628"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation Portable",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Sony%20PSP.png",
+      "correlative_names": [
+        "PlayStation Portable",
+        "Playstation Portable",
+        "PSP",
+        "Sony PSP"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PSP",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "5"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sony PSP",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "5192",
+              "console_opts[]": "5192"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Playstation Portable",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/playstation-portable/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Playstation Portable",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/Playstation%2BPortable",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PlayStation Vita",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/White%20Outline%20Versions/Thick%20Outlines/Handhelds/Sony%20Playstation%20Vita.png",
+      "correlative_names": [
+        "PlayStation Vita",
+        "PS Vita",
+        "Sony Playstation Vita"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "PS Vita",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "89"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sony Playstation Vita",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "5119",
+              "console_opts[]": "5119"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "RCA Studio II",
+      "image": null,
+      "correlative_names": [
+        "RCA Studio II"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "RCA Studio II",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/rca-studio-ii/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Robotron Z1013",
+      "image": null,
+      "correlative_names": [
+        "Robotron Z1013"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Robotron Z1013",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/robotron-z1013/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ScummVM",
+      "image": null,
+      "correlative_names": [
+        "ScummVM"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "ScummVM",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "17977"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega 32X",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%2032X.png",
+      "correlative_names": [
+        "SEGA 32X",
+        "Sega 32X",
+        "Sega 32x"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "SEGA 32X",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9692"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sega 32X",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-32x/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sega 32x",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sega%2B32x",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega CD",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20CD.png",
+      "correlative_names": [
+        "Sega CD"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega CD",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9814"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Dreamcast",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Dreamcast.png",
+      "correlative_names": [
+        "Dreamcast",
+        "Sega Dreamcast"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Dreamcast",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "2390"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sega Dreamcast",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "8089",
+              "console_opts[]": "8089"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Dreamcast",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/dreamcast/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Game Gear",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Sega%20Game%20Gear.png",
+      "correlative_names": [
+        "Game Gear",
+        "Sega Game Gear"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Game Gear",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9476"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sega Game Gear",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "8075",
+              "console_opts[]": "8075"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Game Gear",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/game-gear/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sega Game Gear",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sega%2Bgame%2Bgear",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Genesis / Mega Drive",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Genesis.png",
+      "correlative_names": [
+        "SEGA Genesis",
+        "Sega Genesis",
+        "Sega Genesis / Mega Drive",
+        "Sega Genesis/MegaDrive"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Genesis",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "14"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sega Genesis",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "3",
+              "console_opts[]": "3"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "SEGA Genesis",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-genesis/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sega Genesis/MegaDrive",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sega%2Bgenesis%252Fmegadrive",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Lindbergh",
+      "image": null,
+      "correlative_names": [
+        "Sega Lindbergh"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Lindbergh",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "21512"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Master System",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Master%20System.png",
+      "correlative_names": [
+        "Sega Master System"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Master System",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9806"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sega Master System",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-master-system/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sega Master System",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sega%2Bmaster%2Bsystem",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Naomi",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Arcade/Sega%20Naomi.png",
+      "correlative_names": [
+        "Sega Naomi"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Naomi",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18266"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Pico",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Sega%20Pico.png",
+      "correlative_names": [
+        "Sega Pico"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Pico",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "26927"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sega Pico",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-pico/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega RingEdge",
+      "image": null,
+      "correlative_names": [
+        "Sega RingEdge"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega RingEdge",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "20401"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega RingEdge 2",
+      "image": null,
+      "correlative_names": [
+        "Sega RingEdge 2"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega RingEdge 2",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "21513"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Saturn",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20Saturn.png",
+      "correlative_names": [
+        "Sega Saturn"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega Saturn",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "92"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Sega Saturn",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "806",
+              "console_opts[]": "806"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sega Saturn",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-saturn/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega SG-1000",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Sega%20SG-1000.png",
+      "correlative_names": [
+        "Sega SG-1000",
+        "Sega SG1000"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sega SG-1000",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18711"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sega SG1000",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-sg1000/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sega SG1000",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sega%2Bsg1000",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Super Control Station",
+      "image": null,
+      "correlative_names": [
+        "Sega Super Control Station"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Sega Super Control Station",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-super-control-station/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sega Visual Memory System",
+      "image": null,
+      "correlative_names": [
+        "Sega Visual Memory System"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Sega Visual Memory System",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sega-visual-memory-system/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sharp - X1",
+      "image": null,
+      "correlative_names": [
+        "Sharp - X1"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sharp - X1",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18710"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sharp MZ 700",
+      "image": null,
+      "correlative_names": [
+        "Sharp MZ 700"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Sharp MZ 700",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sharp-mz-700/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sharp X68000",
+      "image": null,
+      "correlative_names": [
+        "Sharp X68000"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Sharp X68000",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "18709"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Sharp X68000",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sharp-x68000/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sharp X68000",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sharp%2Bx68000",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sinclair ZX81",
+      "image": null,
+      "correlative_names": [
+        "Sinclair ZX81"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Sinclair ZX81",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sinclair-zx81/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Sinclair ZX81",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/sinclair%2Bzx81",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "SuFami Turbo",
+      "image": null,
+      "correlative_names": [
+        "SuFami Turbo"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "SuFami Turbo",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/sufami-turbo/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Super Grafx",
+      "image": "https://raw.githubusercontent.com/HVR88/Monochrome-Gaming-Logos/main/png/nec_pcengine_supergrafx.png",
+      "correlative_names": [
+        "Super Grafx"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Super Grafx",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/super-grafx/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Super Nintendo Entertainment System",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Super%20Nintendo%20Entertainment%20System.png",
+      "correlative_names": [
+        "SNES",
+        "Super Nintendo",
+        "Super Nintendo Entertainment System"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "SNES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "6"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "SNES",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "3629",
+              "console_opts[]": "3629"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Super Nintendo",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/super-nintendo/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Super Nintendo",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/super%2Bnintendo",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tandy Color Computer",
+      "image": null,
+      "correlative_names": [
+        "Tandy Color Computer"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Tandy Color Computer",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/tandy-color-computer/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tangerine Oric",
+      "image": null,
+      "correlative_names": [
+        "Tangerine Oric"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Tangerine Oric",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/tangerine-oric/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TeknoParrot",
+      "image": null,
+      "correlative_names": [
+        "TeknoParrot"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "TeknoParrot",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19192"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Thomson MO5",
+      "image": null,
+      "correlative_names": [
+        "Thomson MO5"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Thomson MO5",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/thomson-mo5/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tiger Game Com",
+      "image": null,
+      "correlative_names": [
+        "Tiger Game Com"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Tiger Game Com",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/tiger-game-com/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TurboGrafx-16 / PC Engine",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC%20Engine.png",
+      "correlative_names": [
+        "NEC TurboGrafx-16",
+        "PC Engine/TurboGrafx 16",
+        "TurboGrafx-16",
+        "TurboGrafx-16 / PC Engine"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "NEC TurboGrafx-16",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "12922"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "TurboGrafx-16",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/turbografx-16/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "PC Engine/TurboGrafx 16",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/pc%2Bengine%252Fturbografx%2B16",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TurboGrafx-CD / PC Engine CD",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/NEC%20PC%20Engine%20CD.png",
+      "correlative_names": [
+        "NEC TurboGrafx CD",
+        "PC Engine CD/Turbo Duo/TurboGrafx CD",
+        "TurboGrafx-CD / PC Engine CD"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "NEC TurboGrafx CD",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "12977"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "PC Engine CD/Turbo Duo/TurboGrafx CD",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/%2Bpc%2Bengine%2Bcd%252Fturbo%2Bduo%252Fturbografx%2Bcd",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "VTech CreatiVision",
+      "image": null,
+      "correlative_names": [
+        "VTech CreatiVision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "VTech CreatiVision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/vtech-creativision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "VTech V Smile",
+      "image": null,
+      "correlative_names": [
+        "VTech V Smile"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "VTech V Smile",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/vtech-v-smile/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wang VS",
+      "image": null,
+      "correlative_names": [
+        "Wang VS"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Wang VS",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/wang-vs/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Watara Supervision",
+      "image": null,
+      "correlative_names": [
+        "Watara Supervision"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Watara Supervision",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/watara-supervision/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Windows",
+      "image": null,
+      "correlative_names": [
+        "Windows"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Windows",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "9989"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Windows 3.x",
+      "image": null,
+      "correlative_names": [
+        "Windows 3.x",
+        "Windows 3x"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Windows 3x",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "27583"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Windows 3.x",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/windows%2B3.x",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "WonderSwan",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/WonderSwan.png",
+      "correlative_names": [
+        "Bandai Wonderswan",
+        "WonderSwan"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "WonderSwan",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "19606"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "WonderSwan",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/wonderswan/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Bandai Wonderswan",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/bandai%2Bwonderswan",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "WonderSwan Color",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Handhelds/Wonderswan%20Color.png",
+      "correlative_names": [
+        "Bandai Wonderswan Color",
+        "WonderSwan Color"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "WonderSwan Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "13034"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "Bandai Wonderswan Color",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/bandai%2Bwonderswan%2Bcolor",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Xbox",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Microsoft%20Xbox.png",
+      "correlative_names": [
+        "Microsoft Xbox",
+        "XBOX",
+        "Xbox"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "XBOX",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "90"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Xbox",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "8285",
+              "console_opts[]": "8285"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romsgames",
+          "console_name": "Microsoft Xbox",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/microsoft-xbox/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Xbox 360",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Consoles/Microsoft%20Xbox%20360.png",
+      "correlative_names": [
+        "Xbox 360"
+      ],
+      "providers": [
+        {
+          "name": "romsfun",
+          "console_name": "Xbox 360",
+          "consult": {
+            "method": "GET",
+            "url": "https://romsfun.com/browse-all-roms/",
+            "params": {
+              "q": "",
+              "consoles[]": "94"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romsfun.com/browse-all-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        },
+        {
+          "name": "romspure",
+          "console_name": "Xbox 360",
+          "consult": {
+            "method": "GET",
+            "url": "https://romspure.cc/browse-roms/",
+            "params": {
+              "q": "",
+              "sort": "last_update",
+              "console": "8370",
+              "console_opts[]": "8370"
+            },
+            "pagination": {
+              "mode": "path",
+              "url_template": "https://romspure.cc/browse-roms/page/{page}/"
+            },
+            "search": {
+              "param": "q"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Z-Machine Infocom",
+      "image": null,
+      "correlative_names": [
+        "Z-Machine Infocom"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "Z-Machine Infocom",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/z-machine-infocom/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ZX Spectrum",
+      "image": "https://raw.githubusercontent.com/PRO100BYTE/console-logos/main/Recommended%20Versions%20(Normal)%20(1%20Per%20Platform)%20v2.1/Light%20-%20Color/Computers/Sinclair%20ZX%20Spectrum.png",
+      "correlative_names": [
+        "ZX Spectrum"
+      ],
+      "providers": [
+        {
+          "name": "romsgames",
+          "console_name": "ZX Spectrum",
+          "consult": {
+            "method": "GET",
+            "url": "https://www.romsgames.net/roms/zx-spectrum/",
+            "params": {
+              "sort": "popularity"
+            },
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "q",
+              "url": "https://www.romsgames.net/search/",
+              "paginated": false
+            }
+          }
+        },
+        {
+          "name": "wowroms",
+          "console_name": "ZX Spectrum",
+          "consult": {
+            "method": "GET",
+            "url": "https://wowroms.com/en/roms/list/zx%2Bspectrum",
+            "params": {},
+            "pagination": {
+              "mode": "query",
+              "page_param": "page"
+            },
+            "search": {
+              "param": "search"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

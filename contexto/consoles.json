@@ -1,0 +1,1328 @@
+{
+  "_meta": {
+    "description": "Consoles e plataformas separados por provedor, mantendo os nomes usados nas fontes.",
+    "scope": "Listas extraídas das capturas Burp; WowRoms complementado pelo índice público. Não implica disponibilidade de jogos nem validação ao vivo dos filtros.",
+    "fields": {
+      "name": "Nome exibido pelo provedor.",
+      "id": "ID do console no formulário capturado; null quando não disponível.",
+      "url": "URL de listagem encontrada na fonte; null quando somente o ID do filtro foi extraído."
+    },
+    "sources": {
+      "romsfun": {
+        "type": "burp",
+        "files": [
+          "burpsuite/romsfun-fluxo-pesquisa-e-download",
+          "burpsuite/romsfun-fluxo-pesquisa-paginacao"
+        ],
+        "count": 69
+      },
+      "romspure": {
+        "type": "burp",
+        "files": [
+          "burpsuite/romspure-fluxo-pesquisa-e-download"
+        ],
+        "count": 27
+      },
+      "romsgames": {
+        "type": "burp",
+        "files": [
+          "burpsuite/romsgames-fluxo-pesquisa-e-download"
+        ],
+        "count": 105
+      },
+      "wowroms": {
+        "type": "burp_and_live_index",
+        "files": [
+          "burpsuite/wowroms-fluxo-pesquisa-e-download"
+        ],
+        "index_url": "https://wowroms.com/en/all-roms",
+        "index_checked_on": "2026-11-22",
+        "count": 54,
+        "note": "União dos consoles encontrados nas capturas e no índice público, sem duplicar variações de maiúsculas ou codificação de URL. Playstation, Playstation 2 e Playstation Portable constam nas capturas; não aparecem entre os cartões do índice consultado."
+      }
+    }
+  },
+  "romsfun": [
+    {
+      "name": "3DO",
+      "id": "9174",
+      "url": null
+    },
+    {
+      "name": "Atari 2600",
+      "id": "16629",
+      "url": null
+    },
+    {
+      "name": "Atari 7800",
+      "id": "28299",
+      "url": null
+    },
+    {
+      "name": "Atari Jaguar",
+      "id": "20428",
+      "url": null
+    },
+    {
+      "name": "Commodore - Amiga",
+      "id": "15341",
+      "url": null
+    },
+    {
+      "name": "FDS",
+      "id": "35067",
+      "url": null
+    },
+    {
+      "name": "Fujitsu FM Towns Marty",
+      "id": "16124",
+      "url": null
+    },
+    {
+      "name": "Game Boy (GB)",
+      "id": "95",
+      "url": null
+    },
+    {
+      "name": "Game Boy Color",
+      "id": "11",
+      "url": null
+    },
+    {
+      "name": "GameCube",
+      "id": "13",
+      "url": null
+    },
+    {
+      "name": "GamePark GP32",
+      "id": "19255",
+      "url": null
+    },
+    {
+      "name": "GBA",
+      "id": "4",
+      "url": null
+    },
+    {
+      "name": "J2ME",
+      "id": "19132",
+      "url": null
+    },
+    {
+      "name": "MAME",
+      "id": "14211",
+      "url": null
+    },
+    {
+      "name": "Microsoft MSX",
+      "id": "15524",
+      "url": null
+    },
+    {
+      "name": "Microsoft MSX2",
+      "id": "13048",
+      "url": null
+    },
+    {
+      "name": "MS-DOS",
+      "id": "19282",
+      "url": null
+    },
+    {
+      "name": "MUGEN",
+      "id": "20570",
+      "url": null
+    },
+    {
+      "name": "NEC PC-9801",
+      "id": "18747",
+      "url": null
+    },
+    {
+      "name": "NEC PC-FX",
+      "id": "18060",
+      "url": null
+    },
+    {
+      "name": "NEC TurboGrafx CD",
+      "id": "12977",
+      "url": null
+    },
+    {
+      "name": "NEC TurboGrafx-16",
+      "id": "12922",
+      "url": null
+    },
+    {
+      "name": "Neo Geo",
+      "id": "9922",
+      "url": null
+    },
+    {
+      "name": "Neo Geo AES",
+      "id": "18040",
+      "url": null
+    },
+    {
+      "name": "Neo Geo CD",
+      "id": "17973",
+      "url": null
+    },
+    {
+      "name": "Neo Geo Pocket Color",
+      "id": "18735",
+      "url": null
+    },
+    {
+      "name": "NES",
+      "id": "12",
+      "url": null
+    },
+    {
+      "name": "Nintendo 3DS",
+      "id": "91",
+      "url": null
+    },
+    {
+      "name": "Nintendo 64",
+      "id": "9",
+      "url": null
+    },
+    {
+      "name": "Nintendo DS",
+      "id": "3",
+      "url": null
+    },
+    {
+      "name": "Nintendo Pokemon Mini",
+      "id": "19197",
+      "url": null
+    },
+    {
+      "name": "Nintendo Virtual Boy",
+      "id": "16610",
+      "url": null
+    },
+    {
+      "name": "Nintendo Wii",
+      "id": "10",
+      "url": null
+    },
+    {
+      "name": "Nokia N-Gage",
+      "id": "16035",
+      "url": null
+    },
+    {
+      "name": "OpenBOR",
+      "id": "19630",
+      "url": null
+    },
+    {
+      "name": "Other",
+      "id": "20467",
+      "url": null
+    },
+    {
+      "name": "Ouya",
+      "id": "12883",
+      "url": null
+    },
+    {
+      "name": "Philips CD-i",
+      "id": "9362",
+      "url": null
+    },
+    {
+      "name": "PlayStation (PS)",
+      "id": "7",
+      "url": null
+    },
+    {
+      "name": "PS Vita",
+      "id": "89",
+      "url": null
+    },
+    {
+      "name": "PS2",
+      "id": "8",
+      "url": null
+    },
+    {
+      "name": "PS3",
+      "id": "15",
+      "url": null
+    },
+    {
+      "name": "PS4",
+      "id": "87",
+      "url": null
+    },
+    {
+      "name": "PSP",
+      "id": "5",
+      "url": null
+    },
+    {
+      "name": "ScummVM",
+      "id": "17977",
+      "url": null
+    },
+    {
+      "name": "SEGA 32X",
+      "id": "9692",
+      "url": null
+    },
+    {
+      "name": "Sega CD",
+      "id": "9814",
+      "url": null
+    },
+    {
+      "name": "Sega Dreamcast",
+      "id": "2390",
+      "url": null
+    },
+    {
+      "name": "Sega Game Gear",
+      "id": "9476",
+      "url": null
+    },
+    {
+      "name": "Sega Genesis",
+      "id": "14",
+      "url": null
+    },
+    {
+      "name": "Sega Lindbergh",
+      "id": "21512",
+      "url": null
+    },
+    {
+      "name": "Sega Master System",
+      "id": "9806",
+      "url": null
+    },
+    {
+      "name": "Sega Naomi",
+      "id": "18266",
+      "url": null
+    },
+    {
+      "name": "Sega Pico",
+      "id": "26927",
+      "url": null
+    },
+    {
+      "name": "Sega RingEdge",
+      "id": "20401",
+      "url": null
+    },
+    {
+      "name": "Sega RingEdge 2",
+      "id": "21513",
+      "url": null
+    },
+    {
+      "name": "Sega Saturn",
+      "id": "92",
+      "url": null
+    },
+    {
+      "name": "Sega SG-1000",
+      "id": "18711",
+      "url": null
+    },
+    {
+      "name": "Sharp - X1",
+      "id": "18710",
+      "url": null
+    },
+    {
+      "name": "Sharp X68000",
+      "id": "18709",
+      "url": null
+    },
+    {
+      "name": "SNES",
+      "id": "6",
+      "url": null
+    },
+    {
+      "name": "TeknoParrot",
+      "id": "19192",
+      "url": null
+    },
+    {
+      "name": "Wii U",
+      "id": "86",
+      "url": null
+    },
+    {
+      "name": "Windows",
+      "id": "9989",
+      "url": null
+    },
+    {
+      "name": "Windows 3x",
+      "id": "27583",
+      "url": null
+    },
+    {
+      "name": "WonderSwan",
+      "id": "19606",
+      "url": null
+    },
+    {
+      "name": "WonderSwan Color",
+      "id": "13034",
+      "url": null
+    },
+    {
+      "name": "XBOX",
+      "id": "90",
+      "url": null
+    },
+    {
+      "name": "Xbox 360",
+      "id": "94",
+      "url": null
+    }
+  ],
+  "romspure": [
+    {
+      "name": "3DO Interactive Multiplayer",
+      "id": "9351",
+      "url": null
+    },
+    {
+      "name": "Fujitsu FM Towns Marty",
+      "id": "10573",
+      "url": null
+    },
+    {
+      "name": "MAME",
+      "id": "14677",
+      "url": null
+    },
+    {
+      "name": "NES",
+      "id": "10105",
+      "url": null
+    },
+    {
+      "name": "Nintendo 3DS",
+      "id": "5996",
+      "url": null
+    },
+    {
+      "name": "Nintendo 64",
+      "id": "6206",
+      "url": null
+    },
+    {
+      "name": "Nintendo DS",
+      "id": "6276",
+      "url": null
+    },
+    {
+      "name": "Nintendo Game Boy",
+      "id": "6651",
+      "url": null
+    },
+    {
+      "name": "Nintendo Game Boy Advance",
+      "id": "6822",
+      "url": null
+    },
+    {
+      "name": "Nintendo Game Boy Color",
+      "id": "7277",
+      "url": null
+    },
+    {
+      "name": "Nintendo GameCube",
+      "id": "7392",
+      "url": null
+    },
+    {
+      "name": "Nintendo Wii",
+      "id": "7429",
+      "url": null
+    },
+    {
+      "name": "Nintendo Wii U",
+      "id": "7841",
+      "url": null
+    },
+    {
+      "name": "PS2",
+      "id": "2990",
+      "url": null
+    },
+    {
+      "name": "Sega Dreamcast",
+      "id": "8089",
+      "url": null
+    },
+    {
+      "name": "Sega Game Gear",
+      "id": "8075",
+      "url": null
+    },
+    {
+      "name": "Sega Genesis",
+      "id": "3",
+      "url": null
+    },
+    {
+      "name": "Sega Saturn",
+      "id": "806",
+      "url": null
+    },
+    {
+      "name": "SNES",
+      "id": "3629",
+      "url": null
+    },
+    {
+      "name": "SNK Neo Geo AES",
+      "id": "1682",
+      "url": null
+    },
+    {
+      "name": "Sony Playstation",
+      "id": "1737",
+      "url": null
+    },
+    {
+      "name": "Sony Playstation 3",
+      "id": "3913",
+      "url": null
+    },
+    {
+      "name": "Sony Playstation 4",
+      "id": "4628",
+      "url": null
+    },
+    {
+      "name": "Sony Playstation Vita",
+      "id": "5119",
+      "url": null
+    },
+    {
+      "name": "Sony PSP",
+      "id": "5192",
+      "url": null
+    },
+    {
+      "name": "Xbox",
+      "id": "8285",
+      "url": null
+    },
+    {
+      "name": "Xbox 360",
+      "id": "8370",
+      "url": null
+    }
+  ],
+  "romsgames": [
+    {
+      "name": "Acorn 8 bit",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/acorn-8-bit/"
+    },
+    {
+      "name": "Acorn Archimedes",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/acorn-archimedes/"
+    },
+    {
+      "name": "Acorn Electron",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/acorn-electron/"
+    },
+    {
+      "name": "Amiga 500",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/amiga-500/"
+    },
+    {
+      "name": "Amstrad CPC",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/amstrad-cpc/"
+    },
+    {
+      "name": "Amstrad GX4000",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/amstrad-gx4000/"
+    },
+    {
+      "name": "Apple 1",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/apple-1/"
+    },
+    {
+      "name": "Apple II",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/apple-ii/"
+    },
+    {
+      "name": "Apple II GS",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/apple-ii-gs/"
+    },
+    {
+      "name": "Atari 2600",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-2600/"
+    },
+    {
+      "name": "Atari 5200 SuperSystem",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-5200-supersystem/"
+    },
+    {
+      "name": "Atari 7800 ProSystem",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-7800-prosystem/"
+    },
+    {
+      "name": "Atari 800",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-800/"
+    },
+    {
+      "name": "Atari Jaguar",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-jaguar/"
+    },
+    {
+      "name": "Atari Lynx",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-lynx/"
+    },
+    {
+      "name": "Atari ST",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/atari-st/"
+    },
+    {
+      "name": "Bally Pro Arcade Astrocade",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/bally-pro-arcade-astrocade/"
+    },
+    {
+      "name": "BBC Micro",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/bbc-micro/"
+    },
+    {
+      "name": "Camputers Lynx",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/camputers-lynx/"
+    },
+    {
+      "name": "Capcom Play System",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/capcom-play-system/"
+    },
+    {
+      "name": "Capcom Play System 2",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/capcom-play-system-2/"
+    },
+    {
+      "name": "Capcom Play System 3",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/capcom-play-system-3/"
+    },
+    {
+      "name": "Casio Loopy",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/casio-loopy/"
+    },
+    {
+      "name": "Casio PV1000",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/casio-pv1000/"
+    },
+    {
+      "name": "ColecoVision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/colecovision/"
+    },
+    {
+      "name": "ColecoVision ADAM",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/colecovision-adam/"
+    },
+    {
+      "name": "Commodore 64",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/commodore-64/"
+    },
+    {
+      "name": "Commodore Max Machine",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/commodore-max-machine/"
+    },
+    {
+      "name": "Commodore Pet",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/commodore-pet/"
+    },
+    {
+      "name": "Commodore Plus4 C16",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/commodore-plus4-c16/"
+    },
+    {
+      "name": "Commodore VIC20",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/commodore-vic20/"
+    },
+    {
+      "name": "Dragon Data Dragon",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/dragon-data-dragon/"
+    },
+    {
+      "name": "Dreamcast",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/dreamcast/"
+    },
+    {
+      "name": "Elektronika BK",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/elektronika-bk/"
+    },
+    {
+      "name": "Emerson Arcadia 2001",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/emerson-arcadia-2001/"
+    },
+    {
+      "name": "Entex Adventure Vision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/entex-adventure-vision/"
+    },
+    {
+      "name": "Epoch Super Cassette Vision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/epoch-super-cassette-vision/"
+    },
+    {
+      "name": "Fairchild Channel F",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/fairchild-channel-f/"
+    },
+    {
+      "name": "Funtech Super Acan",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/funtech-super-acan/"
+    },
+    {
+      "name": "Galaksija",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/galaksija/"
+    },
+    {
+      "name": "Game Gear",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/game-gear/"
+    },
+    {
+      "name": "Gameboy",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gameboy/"
+    },
+    {
+      "name": "Gameboy Advance",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gameboy-advance/"
+    },
+    {
+      "name": "Gameboy Color",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gameboy-color/"
+    },
+    {
+      "name": "GameCube",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gamecube/"
+    },
+    {
+      "name": "GamePark GP32",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gamepark-gp32/"
+    },
+    {
+      "name": "GCE Vectrex",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/gce-vectrex/"
+    },
+    {
+      "name": "Hartung Game Master",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/hartung-game-master/"
+    },
+    {
+      "name": "Intellivision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/intellivision/"
+    },
+    {
+      "name": "Interact Family Computer",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/interact-family-computer/"
+    },
+    {
+      "name": "Kaypro II",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/kaypro-ii/"
+    },
+    {
+      "name": "Luxor ABC 800",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/luxor-abc-800/"
+    },
+    {
+      "name": "Magnavox Odyssey 2",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/magnavox-odyssey-2/"
+    },
+    {
+      "name": "MAME 037b11",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/mame-037b11/"
+    },
+    {
+      "name": "Mattel Aquarius",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/mattel-aquarius/"
+    },
+    {
+      "name": "Memotech MTX512",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/memotech-mtx512/"
+    },
+    {
+      "name": "Microsoft Xbox",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/microsoft-xbox/"
+    },
+    {
+      "name": "Miles Gordon Sam Coupe",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/miles-gordon-sam-coupe/"
+    },
+    {
+      "name": "MSX Computer",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/msx-computer/"
+    },
+    {
+      "name": "MSX-2",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/msx-2/"
+    },
+    {
+      "name": "Neo Geo Pocket",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/neo-geo-pocket/"
+    },
+    {
+      "name": "Neo Geo Pocket Color",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/neo-geo-pocket-color/"
+    },
+    {
+      "name": "Nintendo",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo/"
+    },
+    {
+      "name": "Nintendo 3DS",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-3ds/"
+    },
+    {
+      "name": "Nintendo 64",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-64/"
+    },
+    {
+      "name": "Nintendo DS",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-ds/"
+    },
+    {
+      "name": "Nintendo Famicom Disk System",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-famicom-disk-system/"
+    },
+    {
+      "name": "Nintendo Pokemon Mini",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-pokemon-mini/"
+    },
+    {
+      "name": "Nintendo Virtual Boy",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-virtual-boy/"
+    },
+    {
+      "name": "Nintendo Wii",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nintendo-wii/"
+    },
+    {
+      "name": "Nokia N Gage",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/nokia-n-gage/"
+    },
+    {
+      "name": "Pel Varazdin Orao",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/pel-varazdin-orao/"
+    },
+    {
+      "name": "Philips Videopac",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/philips-videopac/"
+    },
+    {
+      "name": "Playstation",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/playstation/"
+    },
+    {
+      "name": "Playstation 2",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/playstation-2/"
+    },
+    {
+      "name": "Playstation Portable",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/playstation-portable/"
+    },
+    {
+      "name": "RCA Studio II",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/rca-studio-ii/"
+    },
+    {
+      "name": "Robotron Z1013",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/robotron-z1013/"
+    },
+    {
+      "name": "Sega 32X",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-32x/"
+    },
+    {
+      "name": "SEGA Genesis",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-genesis/"
+    },
+    {
+      "name": "Sega Master System",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-master-system/"
+    },
+    {
+      "name": "Sega Pico",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-pico/"
+    },
+    {
+      "name": "Sega Saturn",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-saturn/"
+    },
+    {
+      "name": "Sega SG1000",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-sg1000/"
+    },
+    {
+      "name": "Sega Super Control Station",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-super-control-station/"
+    },
+    {
+      "name": "Sega Visual Memory System",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sega-visual-memory-system/"
+    },
+    {
+      "name": "Sharp MZ 700",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sharp-mz-700/"
+    },
+    {
+      "name": "Sharp X68000",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sharp-x68000/"
+    },
+    {
+      "name": "Sinclair ZX81",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sinclair-zx81/"
+    },
+    {
+      "name": "SNK Neo Geo",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/snk-neo-geo/"
+    },
+    {
+      "name": "SuFami Turbo",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/sufami-turbo/"
+    },
+    {
+      "name": "Super Grafx",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/super-grafx/"
+    },
+    {
+      "name": "Super Nintendo",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/super-nintendo/"
+    },
+    {
+      "name": "Tandy Color Computer",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/tandy-color-computer/"
+    },
+    {
+      "name": "Tangerine Oric",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/tangerine-oric/"
+    },
+    {
+      "name": "Thomson MO5",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/thomson-mo5/"
+    },
+    {
+      "name": "Tiger Game Com",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/tiger-game-com/"
+    },
+    {
+      "name": "TurboGrafx-16",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/turbografx-16/"
+    },
+    {
+      "name": "VTech CreatiVision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/vtech-creativision/"
+    },
+    {
+      "name": "VTech V Smile",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/vtech-v-smile/"
+    },
+    {
+      "name": "Wang VS",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/wang-vs/"
+    },
+    {
+      "name": "Watara Supervision",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/watara-supervision/"
+    },
+    {
+      "name": "WonderSwan",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/wonderswan/"
+    },
+    {
+      "name": "Z-Machine Infocom",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/z-machine-infocom/"
+    },
+    {
+      "name": "ZX Spectrum",
+      "id": null,
+      "url": "https://www.romsgames.net/roms/zx-spectrum/"
+    }
+  ],
+  "wowroms": [
+    {
+      "name": "Acorn Archimedes",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/acorn%2Barchimedes"
+    },
+    {
+      "name": "Acorn Atom",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/acorn%2Batom"
+    },
+    {
+      "name": "Acorn BBC Micro",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/acorn%2Bbbc%2Bmicro"
+    },
+    {
+      "name": "Acorn Electron",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/acorn%2Belectron"
+    },
+    {
+      "name": "Amiga",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/amiga"
+    },
+    {
+      "name": "AMSTRAD CPC",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/amstrad%2Bcpc"
+    },
+    {
+      "name": "Apple I",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/apple%2Bi"
+    },
+    {
+      "name": "Apple II",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/apple%2Bii"
+    },
+    {
+      "name": "Apple II GS",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/apple%2Bii%2Bgs"
+    },
+    {
+      "name": "Atari 2600",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2B2600"
+    },
+    {
+      "name": "Atari 5200",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2B5200"
+    },
+    {
+      "name": "Atari 7800",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2B7800"
+    },
+    {
+      "name": "Atari 800",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2B800"
+    },
+    {
+      "name": "Atari Jaguar",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2Bjaguar"
+    },
+    {
+      "name": "Atari Lynx",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2Blynx"
+    },
+    {
+      "name": "Atari ST",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/atari%2Bst"
+    },
+    {
+      "name": "Bandai Wonderswan",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/bandai%2Bwonderswan"
+    },
+    {
+      "name": "Bandai Wonderswan Color",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/bandai%2Bwonderswan%2Bcolor"
+    },
+    {
+      "name": "Capcom Play System 1",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B1"
+    },
+    {
+      "name": "Capcom Play System 2",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B2"
+    },
+    {
+      "name": "Capcom Play System 3",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/capcom%2Bplay%2Bsystem%2B3"
+    },
+    {
+      "name": "Commodore 64",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/commodore%2B64"
+    },
+    {
+      "name": "DOS",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/dos"
+    },
+    {
+      "name": "Future Pinball",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/future%2Bpinball"
+    },
+    {
+      "name": "MAME",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/mame"
+    },
+    {
+      "name": "MAME 0.139u1",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/mame%2B0.139u1"
+    },
+    {
+      "name": "MAME 0.37b5",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/mame%2B0.37b5"
+    },
+    {
+      "name": "Neo Geo",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/neo%2Bgeo"
+    },
+    {
+      "name": "Neo Geo Pocket",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/neo%2Bgeo%2Bpocket"
+    },
+    {
+      "name": "Neo Geo Pocket Color",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/neo%2Bgeo%2Bpocket%2Bcolor"
+    },
+    {
+      "name": "Nintendo 64",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2B64"
+    },
+    {
+      "name": "Nintendo DS",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bds"
+    },
+    {
+      "name": "Nintendo Entertainment System",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bentertainment%2Bsystem"
+    },
+    {
+      "name": "Nintendo Famicom Disk System",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bfamicom%2Bdisk%2Bsystem"
+    },
+    {
+      "name": "Nintendo Gameboy",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy"
+    },
+    {
+      "name": "Nintendo Gameboy Advance",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy%2Badvance"
+    },
+    {
+      "name": "Nintendo Gameboy Color",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bgameboy%2Bcolor"
+    },
+    {
+      "name": "Nintendo Virtual Boy",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nintendo%2Bvirtual%2Bboy"
+    },
+    {
+      "name": "Nokia N Gage",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/nokia%2Bn%2Bgage"
+    },
+    {
+      "name": "PC Engine CD/Turbo Duo/TurboGrafx CD",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/%2Bpc%2Bengine%2Bcd%252Fturbo%2Bduo%252Fturbografx%2Bcd"
+    },
+    {
+      "name": "PC Engine/TurboGrafx 16",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/pc%2Bengine%252Fturbografx%2B16"
+    },
+    {
+      "name": "Playstation",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/Playstation"
+    },
+    {
+      "name": "Playstation 2",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/playstation%2B2"
+    },
+    {
+      "name": "Playstation Portable",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/Playstation%2BPortable"
+    },
+    {
+      "name": "Sega 32x",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sega%2B32x"
+    },
+    {
+      "name": "Sega Game Gear",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sega%2Bgame%2Bgear"
+    },
+    {
+      "name": "Sega Genesis/MegaDrive",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sega%2Bgenesis%252Fmegadrive"
+    },
+    {
+      "name": "Sega Master System",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sega%2Bmaster%2Bsystem"
+    },
+    {
+      "name": "Sega SG1000",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sega%2Bsg1000"
+    },
+    {
+      "name": "Sharp X68000",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sharp%2Bx68000"
+    },
+    {
+      "name": "Sinclair ZX81",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/sinclair%2Bzx81"
+    },
+    {
+      "name": "Super Nintendo",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/super%2Bnintendo"
+    },
+    {
+      "name": "Windows 3.x",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/windows%2B3.x"
+    },
+    {
+      "name": "ZX Spectrum",
+      "id": null,
+      "url": "https://wowroms.com/en/roms/list/zx%2Bspectrum"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "source": "retrorb.png",
+  "source_sha256": "d20ec296f2b04cfb7e9761384ecbb8e550c10577123e1950e046d65eae02756e",
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "ico_sizes": [
+    16,
+    20,
+    24,
+    28,
+    32,
+    40,
+    48,
+    64,
+    96,
+    128,
+    256
+  ],
+  "png_sizes": [
+    16,
+    20,
+    24,
+    28,
+    32,
+    40,
+    48,
+    64,
+    72,
+    96,
+    128,
+    144,
+    152,
+    180,
+    192,
+    256,
+    384,
+    512,
+    1024
+  ],
+  "assets": {
+    "retrorb": {
+      "source": "retrorb.png",
+      "source_sha256": "d20ec296f2b04cfb7e9761384ecbb8e550c10577123e1950e046d65eae02756e",
+      "source_dimensions": [
+        1254,
+        1254
+      ],
+      "windows": "retrorb.ico",
+      "macos": "retrorb.icns",
+      "linux": "retrorb-512.png"
+    },
+    "retrorb-extended": {
+      "source": "retrorb-extended.png",
+      "source_sha256": "f84f12f8f416433452198647e94b3c2f5fb3b2019fdc2c557101616e1bf0ac91",
+      "source_dimensions": [
+        1787,
+        745
+      ],
+      "windows": "retrorb-extended.ico",
+      "macos": "retrorb-extended.icns",
+      "linux": "retrorb-extended-512.png"
+    },
+    "retrorb-typography": {
+      "source": "retrorb-typography.png",
+      "source_sha256": "04bedaa98f4109009055a7453d43325aff37ea306e2d1fbf11bea9ed4740d280",
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "windows": "retrorb-typography.ico",
+      "macos": "retrorb-typography.icns",
+      "linux": "retrorb-typography-512.png"
+    }
+  },
+  "windows": "retrorb.ico",
+  "macos": "retrorb.icns",
+  "linux": "retrorb-512.png",
+  "favicon": "favicon.ico"
+}
