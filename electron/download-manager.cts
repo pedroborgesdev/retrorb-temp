@@ -86,8 +86,10 @@ export class DownloadManager {
   async cancel(id) {
     const task = this.tasks.get(id);
     if (!task) throw new Error('Download não encontrado.');
+    const running = this.running.get(id);
     this.active.get(id)?.controller.abort();
-    return { ...task };
+    if (running) await running;
+    return { ...(this.tasks.get(id) ?? task) };
   }
 
   async abortAll() {

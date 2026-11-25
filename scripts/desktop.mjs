@@ -29,7 +29,11 @@ try {
     await setTimeout(200);
   }
   if (!ready || stopping) throw new Error('A API não iniciou. Confira a porta configurada e as dependências Python.');
-  desktop = spawn(electron, ['.'], { stdio: 'inherit', env: { ...env, ELECTRON_RUN_AS_NODE: '' } });
+  const desktopEnv = { ...env };
+  // Presence of this variable, even when empty, makes Electron run as plain Node.
+  // require("electron") then returns the executable path and app is undefined.
+  delete desktopEnv.ELECTRON_RUN_AS_NODE;
+  desktop = spawn(electron, ['.'], { stdio: 'inherit', env: desktopEnv });
   desktop.on('error', (error) => { console.error(error.message); stop(1); });
   desktop.on('exit', (code) => stop(code || 0));
 } catch (error) {

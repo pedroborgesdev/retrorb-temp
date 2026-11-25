@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { z } from 'zod';
-import { gameSchema, searchResultSchema, sourceSchema, sources, type CatalogItem, type Download, type Game, type Source } from '../types/contracts';
+import { gameSchema, searchResultSchema, sourceSchema, sources, type CatalogItem, type Game, type Source } from '../types/contracts';
 import { itemId } from '../lib/format';
 
 const entrySchema = searchResultSchema.extend({
@@ -9,7 +9,6 @@ const entrySchema = searchResultSchema.extend({
 });
 export type LibraryEntry = z.infer<typeof entrySchema>;
 const handoffSchema = z.object({ id: z.string(), title: z.string(), source: sourceSchema, filename: z.string().nullable(), size: z.string().nullable(), icon: z.string().nullable(), date: z.string(), gameUrl: z.string().nullable() });
-export type Handoff = z.infer<typeof handoffSchema>;
 const preferencesSchema = z.object({
   theme: z.enum(['dark', 'light']).default('dark'), accent: z.enum(['brand', 'coral', 'blue', 'green']).catch('brand').default('brand'),
   cardSize: z.enum(['compact', 'comfortable']).default('comfortable'), density: z.enum(['compact', 'comfortable']).default('comfortable'),
@@ -33,7 +32,6 @@ type State = z.infer<typeof savedSchema> & {
   save: (item: CatalogItem, game?: Game) => void;
   toggleFavorite: (item: CatalogItem, game?: Game) => void;
   remove: (id: string) => void;
-  handoff: (item: CatalogItem, file: Download) => void;
 };
 
 function entry(item: CatalogItem, game?: Game): LibraryEntry {
@@ -60,10 +58,6 @@ export const useLibrary = create<State>()(persist((set) => ({
     return { entries: updated.favorite || updated.inLibrary ? [updated, ...rest] : rest };
   }),
   remove: (id) => set((s) => ({ entries: s.entries.flatMap((e) => e.id !== id ? [e] : e.favorite ? [{ ...e, inLibrary: false }] : []), notice: 'Jogo removido da biblioteca.' })),
-  handoff: (item, file) => set((s) => ({
-    handoffs: [{ id: crypto.randomUUID(), title: item.title ?? 'Jogo sem título', source: item.source, filename: file.filename, size: file.size, icon: item.icon, gameUrl: item.url, date: new Date().toISOString() }, ...s.handoffs].slice(0, 100),
-    notice: 'Link enviado ao navegador. Acompanhe o download por lá.',
-  })),
 }), {
   name: 'retromancy-v1',
   storage: createJSONStorage(() => ({

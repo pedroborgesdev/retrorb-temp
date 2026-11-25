@@ -167,7 +167,7 @@ def open_pinned_download(
             block=True,
         )
         prepared = requests.Request("GET", current).prepare()
-        cookie = requests.cookies.get_cookie_header(prepared, session.cookies)
+        cookie = requests.cookies.get_cookie_header(session.cookies, prepared)
         headers = {
             "Accept": "application/octet-stream,application/zip,application/x-7z-compressed,*/*",
             "Accept-Encoding": "identity",

@@ -200,10 +200,26 @@ test('details, screenshots, favorites, library and in-place web download', async
   await page.screenshot({ path: 'test-results/screenshot-modal.png' });
   await page.keyboard.press('Escape'); await expect(page.getByRole('dialog')).toHaveCount(0); await expect(screenshotTrigger).toBeFocused();
   const gameUrl = page.url();
+  const hrefPromise = page.evaluate(() => new Promise<string>((resolve) => {
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node instanceof HTMLAnchorElement && node.hasAttribute('download') && !node.target) resolve(node.href);
+        }
+      }
+    });
+    observer.observe(document.body, { childList: true });
+  }));
   const browserDownload = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Baixar', exact: true }).click();
   const downloaded = await browserDownload;
+  const href = new URL(await hrefPromise);
   expect(downloaded.suggestedFilename()).toBe('game.zip');
+  expect(href.pathname).toBe('/api/download');
+  expect(href.searchParams.get('source')).toBe('romsfun');
+  expect(href.searchParams.get('file')).toBe('0');
+  expect(href.searchParams.get('filename')).toBe('game.zip');
+  expect(href.searchParams.get('url')).toContain('romsfun.com');
   await expect(page).toHaveURL(gameUrl);
   await expect(page.getByRole('status')).toContainText('Download iniciado no navegador');
   await page.getByRole('link', { name: 'Downloads', exact: true }).first().click();

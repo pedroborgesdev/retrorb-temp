@@ -103,7 +103,8 @@ def test_remote_connection_is_pinned_to_the_validated_ip(monkeypatch):
         def __init__(self, host, **kwargs):
             calls.append((host, kwargs))
 
-        def urlopen(self, *_args, **_kwargs):
+        def urlopen(self, *_args, **kwargs):
+            calls.append(("open", kwargs.get("headers")))
             return StubHttpResponse()
 
         def close(self):
@@ -111,10 +112,12 @@ def test_remote_connection_is_pinned_to_the_validated_ip(monkeypatch):
 
     monkeypatch.setattr(download_module.urllib3, "HTTPSConnectionPool", StubPool)
     resolver = lambda *_args, **_kwargs: [(socket.AF_INET, socket.SOCK_STREAM, 6, "", ("93.184.216.34", 443))]
+    session = requests.Session()
+    session.cookies.set("download_session", "abc", domain="files.example", path="/")
 
     remote = download_module.open_pinned_download(
         "https://files.example/game.zip",
-        session=requests.Session(),
+        session=session,
         referer="https://romsfun.com/game",
         resolver=resolver,
     )
@@ -122,6 +125,8 @@ def test_remote_connection_is_pinned_to_the_validated_ip(monkeypatch):
     assert calls[0][0] == "93.184.216.34"
     assert calls[0][1]["server_hostname"] == "files.example"
     assert calls[0][1]["assert_hostname"] == "files.example"
+    assert calls[1][1]["Cookie"] == "download_session=abc"
+    assert calls[1][1]["Host"] == "files.example"
     remote.close()
 
 

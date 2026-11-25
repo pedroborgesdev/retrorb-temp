@@ -84,9 +84,11 @@ describe('desktop download manager', () => {
     const cancelled = waitFor(manager, 'cancelled');
     const started = await manager.start(request());
 
-    await manager.cancel(started.id);
+    const returned = await manager.cancel(started.id);
     await cancelled;
 
+    expect(returned.status).toBe('cancelled');
+    expect(returned.error).toBeNull();
     expect(await readdir(destination)).toEqual([]);
   });
 
