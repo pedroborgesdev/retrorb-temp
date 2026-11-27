@@ -8,6 +8,11 @@ export function safeUrl(value: string | null | undefined): string | null {
   } catch { return null; }
 }
 
+export function safeDownloadUrl(value: string | null | undefined): string | null {
+  if (!value || value.includes('#')) return null;
+  return safeUrl(value);
+}
+
 export const formatNumber = (value: number | null | undefined) =>
   value == null || !Number.isFinite(value) ? '—' : new Intl.NumberFormat('pt-BR', { notation: value >= 10000 ? 'compact' : 'standard', maximumFractionDigits: 1 }).format(value);
 

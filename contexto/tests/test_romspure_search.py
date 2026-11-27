@@ -119,7 +119,7 @@ def test_search_returns_exact_schema_and_enriches_exact_download_count():
     assert session.steps == []
     assert session.calls[0][1]["params"] == {
         "q": "Pokémon Fire Red",
-        "sort": "last_update",
+        "sort": "popular",
     }
     assert session.calls[0][1]["timeout"] == 15
 
@@ -211,7 +211,7 @@ def test_search_page_uses_numbered_path_and_reports_next_page():
     page_html = """
     <nav aria-label="Pagination">
       <a class="next page-numbers"
-         href="https://romspure.cc/browse-roms/page/3/?q=Pokemon&amp;sort=last_update">
+         href="https://romspure.cc/browse-roms/page/3/?q=Pokemon&amp;sort=popular">
         Next
       </a>
     </nav>
@@ -224,7 +224,7 @@ def test_search_page_uses_numbered_path_and_reports_next_page():
     assert result == {"results": [], "page": 2, "has_next": True}
     assert session.calls[0][1]["params"] == {
         "q": "Pokemon",
-        "sort": "last_update",
+        "sort": "popular",
     }
 
 

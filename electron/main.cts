@@ -55,7 +55,7 @@ app.whenReady().then(() => {
   downloads = new DownloadManager({
     root: path.join(app.getAppPath(), 'roms'),
     endpoint: downloadEndpoint,
-    fetcher: (url: string, init: { signal: AbortSignal }) => net.fetch(url, init),
+    fetcher: (url: string, init: { signal: AbortSignal; headers?: Record<string, string> }) => net.fetch(url, init),
   });
   downloads.subscribe((task: unknown) => {
     if (window && !window.isDestroyed()) window.webContents.send('download:changed', task);
@@ -80,6 +80,10 @@ app.whenReady().then(() => {
   ipcMain.handle('download:cancel', async (event, value: unknown) => {
     if (!trustedSender(event) || !downloads || typeof value !== 'string' || value.length > 100) throw new Error('Download inválido.');
     return downloads.cancel(value);
+  });
+  ipcMain.handle('download:retry', async (event, value: unknown) => {
+    if (!trustedSender(event) || !downloads || typeof value !== 'string' || value.length > 100) throw new Error('Download inválido.');
+    return downloads.retry(value);
   });
   ipcMain.handle('download:list', async (event) => {
     if (!trustedSender(event) || !downloads) throw new Error('Ação indisponível.');

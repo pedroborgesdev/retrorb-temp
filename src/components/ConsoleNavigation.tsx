@@ -4,7 +4,7 @@ import { spatialTarget, type Direction } from '../lib/spatialNavigation';
 
 const focusable = 'a[href],button,input,select,textarea,summary,[tabindex="0"]';
 const directions: Record<string, Direction> = { ArrowLeft: 'left', ArrowRight: 'right', ArrowUp: 'up', ArrowDown: 'down' };
-const isEditing = (element: Element | null) => Boolean(element?.closest('input,textarea,select,[contenteditable="true"],[role="textbox"],[role="slider"]'));
+const isEditing = (element: Element | null) => Boolean(element?.closest('input,textarea,select,[contenteditable="true"],[role="textbox"],[role="slider"],[role="combobox"][aria-expanded="true"],[role="listbox"]'));
 
 function scope(): Element {
   return document.querySelector('dialog[open]') ?? document.body;
@@ -60,13 +60,15 @@ export function ConsoleNavigation() {
     let previousButtons: boolean[] = [];
     let previousPad = '';
     let editingSelect: HTMLSelectElement | null = null;
-    const endSelection = () => { editingSelect = null; setSelecting(false); };
+    let editingListbox: HTMLElement | null = null;
+    const endSelection = () => { editingSelect = null; editingListbox = null; setSelecting(false); };
     const back = () => {
       const dialog = document.querySelector<HTMLDialogElement>('dialog[open]');
       if (dialog) dialog.querySelector<HTMLButtonElement>('[aria-label="Fechar"]')?.click();
       else navigate(-1);
     };
     const keyboard = (event: KeyboardEvent) => {
+      if (!event.isTrusted) return;
       setUsingGamepad(false);
       endSelection();
       if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || isEditing(event.target as Element)) return;
@@ -99,8 +101,15 @@ export function ConsoleNavigation() {
           const y = pad.axes[1] ?? 0;
           const key = buttons[14] ? 'ArrowLeft' : buttons[15] ? 'ArrowRight' : buttons[12] ? 'ArrowUp' : buttons[13] ? 'ArrowDown'
             : Math.max(Math.abs(x), Math.abs(y)) < 0.55 ? '' : Math.abs(x) > Math.abs(y) ? (x < 0 ? 'ArrowLeft' : 'ArrowRight') : (y < 0 ? 'ArrowUp' : 'ArrowDown');
+          if (editingListbox && (!editingListbox.isConnected || editingListbox.getAttribute('aria-expanded') !== 'true')) {
+            endSelection();
+          }
           if (key && (key !== lastDirection || now >= repeatAt)) {
-            if (editingSelect && document.activeElement === editingSelect && editingSelect.isConnected) {
+            if (editingListbox) {
+              if (key === 'ArrowUp' || key === 'ArrowDown') {
+                editingListbox.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true, cancelable: true }));
+              }
+            } else if (editingSelect && document.activeElement === editingSelect && editingSelect.isConnected) {
               if (key === 'ArrowUp' || key === 'ArrowDown') {
                 const options = [...editingSelect.options];
                 const delta = key === 'ArrowDown' ? 1 : -1;
@@ -122,14 +131,30 @@ export function ConsoleNavigation() {
           }
           lastDirection = key;
           if (pressed(0)) {
-            if (editingSelect) endSelection();
+            if (editingListbox) {
+              editingListbox.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+              if (editingListbox.dataset.multiple !== 'true') endSelection();
+            } else if (editingSelect) endSelection();
             else if (document.activeElement instanceof HTMLSelectElement) { editingSelect = document.activeElement; setSelecting(true); }
+            else if (document.activeElement instanceof HTMLElement && document.activeElement.matches('[role="combobox"][aria-haspopup="listbox"]')) {
+              const target = document.activeElement;
+              target.click();
+              editingListbox = target;
+              setSelecting(true);
+            }
             else if (!(document.activeElement instanceof HTMLElement) || !controls().includes(document.activeElement)) move('down');
             else document.activeElement.click();
             setUsingGamepad(true);
           }
-          if (pressed(1)) { if (editingSelect) endSelection(); else back(); setUsingGamepad(true); }
-          if (!editingSelect) {
+          if (pressed(1)) {
+            if (editingListbox) {
+              editingListbox.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
+              endSelection();
+            } else if (editingSelect) endSelection();
+            else back();
+            setUsingGamepad(true);
+          }
+          if (!editingSelect && !editingListbox) {
             if (pressed(4)) { switchTab(-1); setUsingGamepad(true); }
             if (pressed(5)) { switchTab(1); setUsingGamepad(true); }
             if (pressed(9) && !document.querySelector('dialog[open]')) {
@@ -159,5 +184,5 @@ export function ConsoleNavigation() {
       window.removeEventListener('focusin', focusChanged);
     };
   }, [navigate]);
-  return usingGamepad ? <div aria-label="Comandos do controle" className="pointer-events-none fixed bottom-3 left-1/2 z-40 flex -translate-x-1/2 gap-4 whitespace-nowrap rounded-full border border-line bg-sidebar px-4 py-2 text-[11px] text-muted shadow-lg"><span><b className="mr-1 text-accent">A</b>{selecting ? 'Confirmar' : 'Selecionar'}</span><span><b className="mr-1 text-ink">B</b>{selecting ? 'Fechar seleção' : 'Voltar'}</span><span className="hidden sm:inline">{selecting ? '↑ / ↓ · Opções' : 'LB / RB · Abas'}</span></div> : null;
+  return usingGamepad ? <div aria-label="Comandos do controle" className="pointer-events-none fixed bottom-[64px] left-1/2 z-40 flex -translate-x-1/2 gap-4 whitespace-nowrap rounded-full border border-line bg-sidebar px-4 py-2 text-[11px] text-muted shadow-lg md:bottom-3"><span><b className="mr-1 text-accent">A</b>{selecting ? 'Confirmar' : 'Selecionar'}</span><span><b className="mr-1 text-ink">B</b>{selecting ? 'Fechar seleção' : 'Voltar'}</span><span className="hidden sm:inline">{selecting ? '↑ / ↓ · Opções' : 'LB / RB · Abas'}</span></div> : null;
 }

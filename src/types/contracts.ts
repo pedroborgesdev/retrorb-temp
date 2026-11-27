@@ -21,8 +21,18 @@ export const searchResponseSchema = z.object({
   query: z.string(), sources: z.record(z.string(), sourceSearchSchema),
 });
 export type SearchResponse = z.infer<typeof searchResponseSchema>;
-export const downloadSchema = z.object({ filename: text, type: text, size: text, download_url: text });
+export const downloadSchema = z.object({
+  filename: text, type: text, size: text, download_url: text, code: z.string().nullable().optional(),
+});
 export type Download = z.infer<typeof downloadSchema>;
+export const romRefSchema = z.object({
+  code: z.string(),
+  source: sourceSchema,
+  label: z.string(),
+  game_url: z.string(),
+  file_index: z.number().int().nonnegative(),
+});
+export type RomRef = z.infer<typeof romRefSchema>;
 export const downloadRequestSchema = z.object({
   source: sourceSchema,
   gameUrl: z.string(),
@@ -55,6 +65,11 @@ export const gameSchema = z.object({
 export type Game = z.infer<typeof gameSchema>;
 export const gameResponseSchema = z.object({ source: sourceSchema, label: z.string(), game: gameSchema });
 export type GameResponse = z.infer<typeof gameResponseSchema>;
+export const aiDescriptionResponseSchema = z.discriminatedUnion('available', [
+  z.object({ available: z.literal(true), description: z.string().min(1), model: z.string() }),
+  z.object({ available: z.literal(false), description: z.null(), model: z.string() }),
+]);
+export type AiDescriptionResponse = z.infer<typeof aiDescriptionResponseSchema>;
 export type CatalogItem = SearchResult & { source: Source };
 
 export const consoleCatalogSchema = z.object({

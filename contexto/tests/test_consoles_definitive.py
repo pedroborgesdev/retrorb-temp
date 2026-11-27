@@ -90,7 +90,7 @@ def test_consult_metadata_exactly_matches_captured_provider_routes():
                 assert consult == {
                     "method": "GET",
                     "url": "https://romsfun.com/browse-all-roms/",
-                    "params": {"q": "", "consoles[]": str(captured["id"])},
+                    "params": {"q": "", "sort": "downloads", "consoles[]": str(captured["id"])},
                     "search": {"param": "q"},
                     "pagination": {
                         "mode": "path",
@@ -103,7 +103,7 @@ def test_consult_metadata_exactly_matches_captured_provider_routes():
                     "url": "https://romspure.cc/browse-roms/",
                     "params": {
                         "q": "",
-                        "sort": "last_update",
+                        "sort": "popular",
                         "console": str(captured["id"]),
                         "console_opts[]": str(captured["id"]),
                     },

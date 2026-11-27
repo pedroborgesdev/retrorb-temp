@@ -6,6 +6,7 @@ export interface DownloadPlatform {
   available: boolean;
   startDownload(request: DownloadRequest): Promise<DownloadTask>;
   cancelDownload(id: string): Promise<DownloadTask>;
+  retryDownload(id: string): Promise<DownloadTask>;
   listDownloads(): Promise<DownloadTask[]>;
   onDownloadChanged(callback: (task: DownloadTask) => void): () => void;
 }
@@ -19,7 +20,7 @@ export function createDownloadsApi(
   buildUrl: UrlBuilder = apiUrl,
 ) {
   return {
-    capabilities: { progress: platform.available, pause: false, resume: false, cancel: platform.available, openDirectory: false } as const,
+    capabilities: { progress: platform.available, pause: false, resume: platform.available, cancel: platform.available, openDirectory: false } as const,
     async start(request: DownloadRequest) {
       if (platform.available) return { mode: 'desktop' as const, task: await platform.startDownload(request) };
       if (!documentLike) throw new Error('O download não está disponível neste ambiente.');
@@ -37,6 +38,7 @@ export function createDownloadsApi(
       return { mode: 'web' as const };
     },
     cancel: (id: string) => platform.cancelDownload(id),
+    retry: (id: string) => platform.retryDownload(id),
     list: () => platform.listDownloads(),
     onChanged: (callback: (task: DownloadTask) => void) => platform.onDownloadChanged(callback),
   };

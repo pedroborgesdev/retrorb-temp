@@ -399,7 +399,7 @@ def search_page(
         try:
             response = client.get(
                 _search_url(page),
-                params={"q": normalized_name},
+                params={"q": normalized_name, "sort": "downloads"},
                 headers=REQUEST_HEADERS,
                 timeout=timeout,
                 allow_redirects=False,

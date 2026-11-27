@@ -9,6 +9,7 @@ declare global {
       openExternal: (url: string) => Promise<void>;
       downloadStart: (request: DownloadRequest) => Promise<DownloadTask>;
       downloadCancel: (id: string) => Promise<DownloadTask>;
+      downloadRetry?: (id: string) => Promise<DownloadTask>;
       downloadList: () => Promise<DownloadTask[]>;
       onDownloadChanged: (callback: (task: DownloadTask) => void) => () => void;
     };
@@ -25,6 +26,10 @@ export const desktopApi = {
   cancelDownload(id: string) {
     if (!window.desktop) throw new Error('Downloads locais só estão disponíveis no aplicativo.');
     return window.desktop.downloadCancel(id);
+  },
+  retryDownload(id: string) {
+    if (!window.desktop?.downloadRetry) throw new Error('Downloads locais só estão disponíveis no aplicativo.');
+    return window.desktop.downloadRetry(id);
   },
   listDownloads() { return window.desktop?.downloadList() ?? Promise.resolve([]); },
   onDownloadChanged(callback: (task: DownloadTask) => void) {

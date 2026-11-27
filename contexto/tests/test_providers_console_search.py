@@ -98,17 +98,17 @@ def test_prepares_path_routes_for_playstation_3():
 
     assert module._prepare_request(providers[0], page=1) == (
         "https://romsfun.com/browse-all-roms/",
-        {"q": "", "consoles[]": "15"},
+        {"q": "", "sort": "downloads", "consoles[]": "15"},
     )
     assert module._prepare_request(providers[0], page=2) == (
         "https://romsfun.com/browse-all-roms/page/2/",
-        {"q": "", "consoles[]": "15"},
+        {"q": "", "sort": "downloads", "consoles[]": "15"},
     )
     assert module._prepare_request(providers[1], page=2) == (
         "https://romspure.cc/browse-roms/page/2/",
         {
             "q": "",
-            "sort": "last_update",
+            "sort": "popular",
             "console": "3913",
             "console_opts[]": "3913",
         },

@@ -2,7 +2,9 @@
 
 /* Tailwind entry point and shared design tokens; no component CSS. */
 @theme inline {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --color-canvas: var(--retro-canvas);
   --color-sidebar: var(--retro-sidebar);
   --color-brand-surface: var(--retro-brand-surface);
@@ -19,8 +21,368 @@
   --color-paper: var(--retro-paper);
   --color-brand-ink: var(--retro-brand-ink);
   --color-brand-teal: var(--retro-teal);
+  --color-brand-petrol: var(--retro-petrol);
   --color-brand-coral: var(--retro-coral);
   --color-brand-orange: var(--retro-orange);
   --color-brand-gold: var(--retro-gold);
   --spacing-sidebar: 220px;
+}
+
+@keyframes retro-page-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-page-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.99);
+  }
+}
+
+@keyframes retro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-tab-in {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-paginate-next {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-paginate-prev {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-page-chip-in {
+  from {
+    opacity: 0;
+    transform: translateX(8px) scale(0.84);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-menu-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-menu-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes retro-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-11px) rotate(-2deg);
+  }
+}
+
+@keyframes retro-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes retro-spectrum {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 250% 50%;
+  }
+}
+
+@keyframes retro-pop {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.16);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes retro-desc-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-desc-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes retro-ai-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@keyframes retro-skeleton-pulse {
+  0%, 100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes retro-field-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+.retro-page-enter {
+  animation: retro-page-in 320ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-page-exit {
+  animation: retro-page-out 160ms cubic-bezier(0.4, 0, 1, 1) forwards;
+  pointer-events: none;
+}
+
+.retro-rise {
+  animation: retro-rise 440ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  animation-delay: calc(50ms + min(var(--stagger, 0), 10) * 55ms);
+}
+
+.retro-tab-enter {
+  animation: retro-tab-in 280ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-paginate-next {
+  animation: retro-paginate-next 280ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-paginate-prev {
+  animation: retro-paginate-prev 280ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-page-chip-in {
+  animation: retro-page-chip-in 260ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-menu-down {
+  animation: retro-menu-in-down 220ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-menu-up {
+  animation: retro-menu-in-up 220ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-modal[open] {
+  animation: retro-modal-in 260ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-modal[open]::backdrop {
+  animation: retro-backdrop-in 220ms ease-out backwards;
+}
+
+.retro-toast {
+  animation: retro-toast-in 300ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-float {
+  animation: retro-float 3.2s ease-in-out infinite;
+}
+
+.retro-orbit {
+  animation: retro-orbit 9s linear infinite;
+}
+
+.retro-orbit-reverse {
+  animation: retro-orbit 13s linear infinite reverse;
+}
+
+.retro-lume-rim {
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in srgb, var(--lume-color, var(--retro-accent)) 42%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--lume-color, var(--retro-accent)) 12%, transparent);
+}
+
+.retro-lume-wash {
+  background-image: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--lume-color, var(--retro-accent)) 10%, transparent) 0%,
+    color-mix(in srgb, var(--lume-color, var(--retro-accent)) 3%, transparent) 24%,
+    transparent 52%
+  );
+}
+
+.retro-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+
+.retro-spectrum {
+  background-size: 250% 100%;
+  animation: retro-spectrum 3.5s linear infinite;
+}
+
+.retro-pop {
+  animation: retro-pop 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.retro-sheen {
+  position: relative;
+}
+
+.retro-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  background-image: linear-gradient(110deg, transparent 25%, rgba(255, 255, 255, 0.12) 50%, transparent 75%);
+  transform: translateX(-140%);
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.retro-sheen:hover::after {
+  transform: translateX(140%);
+}
+
+.retro-desc-from-right {
+  animation: retro-desc-from-right 280ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-desc-from-left {
+  animation: retro-desc-from-left 280ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+.retro-ai-block {
+  animation: retro-ai-reveal 420ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  animation-delay: calc(min(var(--ai-step, 0), 10) * 45ms);
+}
+
+.retro-skeleton-group {
+  animation: retro-skeleton-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: opacity;
+}
+
+.retro-field-in {
+  animation: retro-field-in 320ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
 }

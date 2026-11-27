@@ -62,7 +62,7 @@ test('standard gamepad edits a native filter, exits fields and switches tabs; un
   });
   await page.goto('/#/settings');
   await page.getByRole('button', { name: 'Aparência', exact: true }).click();
-  const theme = page.getByLabel('Tema', { exact: true });
+  const theme = page.getByRole('combobox', { name: 'Tema', exact: true });
   await theme.focus();
   await padButton(page, 0);
   await expect(page.getByLabel('Comandos do controle')).toHaveCount(0);
@@ -70,7 +70,10 @@ test('standard gamepad edits a native filter, exits fields and switches tabs; un
   await padButton(page, 0);
   await expect(page.getByLabel('Comandos do controle')).toContainText('Confirmar');
   await padButton(page, 13);
-  await expect(theme).toHaveValue('light');
+  await padButton(page, 0);
+  await expect(theme).toHaveAttribute('data-value', 'light');
+  await padButton(page, 0);
+  await expect(page.getByLabel('Comandos do controle')).toContainText('Confirmar');
   await padButton(page, 1);
   await expect(page).toHaveURL(/settings/);
   await expect(page.getByLabel('Comandos do controle')).toContainText('Selecionar');

@@ -13,6 +13,7 @@ const preferencesSchema = z.object({
   theme: z.enum(['dark', 'light']).default('dark'), accent: z.enum(['brand', 'coral', 'blue', 'green']).catch('brand').default('brand'),
   cardSize: z.enum(['compact', 'comfortable']).default('comfortable'), density: z.enum(['compact', 'comfortable']).default('comfortable'),
   enabledSources: z.array(sourceSchema).default([...sources]), view: z.enum(['grid', 'list']).default('grid'),
+  hfApiKey: z.string().default(''), hfModel: z.string().default('openai/gpt-oss-120b'),
 });
 export type Preferences = z.infer<typeof preferencesSchema>;
 const savedSchema = z.object({
@@ -60,6 +61,17 @@ export const useLibrary = create<State>()(persist((set) => ({
   remove: (id) => set((s) => ({ entries: s.entries.flatMap((e) => e.id !== id ? [e] : e.favorite ? [{ ...e, inLibrary: false }] : []), notice: 'Jogo removido da biblioteca.' })),
 }), {
   name: 'retromancy-v1',
+  version: 2,
+  migrate: (persistedState, version) => {
+    if (version < 2 && persistedState && typeof persistedState === 'object') {
+      const state = persistedState as { preferences?: Record<string, unknown> };
+      return {
+        ...state,
+        preferences: { ...(state.preferences ?? {}), accent: 'brand' },
+      };
+    }
+    return persistedState;
+  },
   storage: createJSONStorage(() => ({
     getItem: (key) => { try { return localStorage.getItem(key); } catch { return null; } },
     setItem: (key, value) => { try { localStorage.setItem(key, value); } catch { window.dispatchEvent(new Event('storage-unavailable')); } },

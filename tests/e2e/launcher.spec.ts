@@ -7,6 +7,10 @@ const requests: Record<string, number> = {};
 function result(source: string, page: number, query = 'Pokemon') {
   return { title: `${query} ${labels[source]} ${page}`, url: `https://${domains[source]}/roms/game-${page}.html`, icon: null, console: 'Game Boy Advance', size: '5 MB', downloads: 1234 };
 }
+async function chooseListbox(page: Page, label: string, optionText: string) {
+  await page.getByRole('combobox', { name: label, exact: true }).click();
+  await page.getByRole('option', { name: optionText, exact: true }).click();
+}
 async function mockSearch(page: Page, partialError = false) {
   let failing = partialError;
   await page.route('**/api/search?**', async (route) => {
@@ -53,7 +57,7 @@ test('home console shelf uses catalog artwork and stays horizontally navigable w
   await expect(shelf.getByRole('link', { name: 'Nintendo DS' })).toBeVisible();
   await expect(shelf.getByRole('link', { name: 'Game Boy Advance' }).getByRole('img', { name: 'Game Boy Advance — imagem indisponível' })).toBeVisible();
   await expect(shelf.getByRole('listitem')).toHaveCount(0);
-  await expect(shelf.getByRole('link')).toHaveCount(4);
+  await expect(shelf.getByRole('link')).toHaveCount(5);
   expect(await page.locator('main').evaluate((element) => element.scrollWidth - element.clientWidth)).toBeLessThanOrEqual(1);
   const shelfDimensions = await shelf.evaluate((element) => ({ scroll: element.scrollWidth, client: element.clientWidth }));
   expect(shelfDimensions.scroll).toBeGreaterThan(shelfDimensions.client);
@@ -85,17 +89,16 @@ test('console catalog navigates to empty-text browsing, keeps aliases and pagina
   await page.getByRole('link', { name: /PlayStation 3/ }).click();
   await expect(page.getByRole('heading', { name: 'Jogos de PlayStation 3' })).toBeVisible();
   await expect(page.getByLabel('Pesquisar jogos', { exact: true })).toHaveValue('');
-  await expect(page.getByLabel('Filtrar por console')).toHaveValue('PlayStation 3');
+  await expect(page.getByRole('combobox', { name: 'Filtrar por console', exact: true })).toHaveAttribute('data-value', 'PlayStation 3');
   await expect(page.getByText('Console game RomsPure 1', { exact: true })).toBeVisible();
   expect(calls.every((url) => url.searchParams.get('console') === 'PlayStation 3' && url.searchParams.get('q') === '')).toBe(true);
   expect(new Set(calls.map((url) => url.searchParams.get('source')))).toEqual(new Set(['romsfun', 'romspure']));
-  await page.getByRole('button', { name: 'Carregar mais de RomsFun' }).click();
   await expect(page.getByText('Console game RomsFun 2', { exact: true })).toBeVisible();
   await page.getByLabel('Pesquisar jogos', { exact: true }).fill('God of War');
   await expect(page.getByText('God of War RomsFun 1', { exact: true })).toBeVisible();
-  await expect(page.getByLabel('Filtrar por console')).toHaveValue('PlayStation 3');
+  await expect(page.getByRole('combobox', { name: 'Filtrar por console', exact: true })).toHaveAttribute('data-value', 'PlayStation 3');
   await page.reload();
-  await expect(page.getByLabel('Filtrar por console')).toHaveValue('PlayStation 3');
+  await expect(page.getByRole('combobox', { name: 'Filtrar por console', exact: true })).toHaveAttribute('data-value', 'PlayStation 3');
   await page.getByRole('button', { name: 'Limpar pesquisa' }).click();
   await expect(page.getByText('Console game RomsFun 1', { exact: true })).toBeVisible();
   await page.screenshot({ path: 'test-results/console-explore.png' });
@@ -103,10 +106,13 @@ test('console catalog navigates to empty-text browsing, keeps aliases and pagina
   await expect(page.getByRole('heading', { name: 'Consoles', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Sega Lindbergh', exact: true }).getByRole('img', { name: 'Sega Lindbergh — imagem indisponível' })).toBeVisible();
   await page.getByRole('link', { name: 'Explorar', exact: true }).click();
-  await page.getByLabel('Filtrar por console').selectOption('PlayStation 3');
+  await chooseListbox(page, 'Filtrar por console', 'PlayStation 3');
   await expect(page.getByText('Console game RomsFun 1', { exact: true })).toBeVisible();
-  await page.getByLabel('Filtrar fonte').selectOption('romspure');
-  await expect(page.getByLabel('Filtrar por console')).toHaveValue('PlayStation 3');
+  await page.getByRole('combobox', { name: 'Filtrar fonte', exact: true }).click();
+  await page.getByRole('option', { name: 'Todas as fontes', exact: true }).click();
+  await page.getByRole('option', { name: 'RomsPure', exact: true }).click();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('combobox', { name: 'Filtrar por console', exact: true })).toHaveAttribute('data-value', 'PlayStation 3');
   await expect(page).toHaveURL(/source=romspure/);
   await expect(page.getByRole('region', { name: 'Resultados RomsFun' })).toHaveCount(0);
   await expect(page.getByText('Console game RomsPure 1', { exact: true })).toBeVisible();
@@ -128,10 +134,10 @@ test('home, local library, preferences, keyboard shortcut, and responsive shell'
   await expect(page.getByText('Meu jogo local', { exact: true })).toBeVisible();
   await page.getByRole('link', { name: 'Configurações', exact: true }).first().click();
   await page.getByRole('button', { name: 'Aparência', exact: true }).click();
-  await page.getByLabel('Tema', { exact: true }).selectOption('light');
+  await chooseListbox(page, 'Tema', 'Claro');
   await page.reload();
   await page.getByRole('button', { name: 'Aparência', exact: true }).click();
-  await expect(page.getByLabel('Tema', { exact: true })).toHaveValue('light');
+  await expect(page.getByRole('combobox', { name: 'Tema', exact: true })).toHaveAttribute('data-value', 'light');
   for (const width of [1280, 1366, 1920, 2560]) {
     await page.setViewportSize({ width, height: 720 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -153,7 +159,6 @@ test('partial failures, source retry and independent pagination preserve other s
   await pure.getByRole('button', { name: 'Tentar novamente' }).click();
   await expect(pure.getByText('Pokemon RomsPure 1', { exact: true })).toBeVisible();
   const before = requests.romsfun;
-  await wow.getByRole('button', { name: 'Carregar mais de WowRoms' }).click();
   await expect(wow.getByText('Pokemon WowRoms 1', { exact: true })).toBeVisible();
   await expect(wow.getByText('Pokemon WowRoms 2', { exact: true })).toBeVisible();
   expect(requests.romsfun).toBe(before);
@@ -231,7 +236,7 @@ test('details, screenshots, favorites, library and in-place web download', async
   await expect(page.getByText('Pokemon RomsFun 1', { exact: true })).toBeVisible();
 });
 
-test('desktop download navigates to progress and can be cancelled', async ({ page }) => {
+test('desktop download shows progress, retries from last chunk, and removes item after cancel confirmation', async ({ page }) => {
   await page.addInitScript(() => {
     (window as any).desktop = {
       windowAction: () => {},
@@ -239,14 +244,20 @@ test('desktop download navigates to progress and can be cancelled', async ({ pag
       downloadList: async () => [],
       onDownloadChanged: () => () => {},
       downloadStart: async (request: any) => ({
-        ...request, id: 'desktop-download', status: 'downloading', receivedBytes: 2, totalBytes: 10,
-        startedAt: '2026-11-23T12:00:00.000Z', completedAt: null, destination: null,
-        error: null, platform: 'desktop',
+        ...request, id: 'desktop-download', status: 'failed', receivedBytes: 4, totalBytes: 10,
+        startedAt: '2026-11-23T12:00:00.000Z', completedAt: '2026-11-23T12:00:01.000Z',
+        destination: null, error: 'Conexão interrompida.', platform: 'desktop',
+      }),
+      downloadRetry: async () => ({
+        id: 'desktop-download', source: 'romsfun', gameUrl: 'https://romsfun.com/roms/game-1.html', fileIndex: 0,
+        title: 'Pokemon RomsFun 1', icon: null, filename: 'game.zip', size: '5 MB', status: 'downloading',
+        receivedBytes: 4, totalBytes: 10, startedAt: '2026-11-23T12:00:00.000Z', completedAt: null,
+        destination: null, error: null, platform: 'desktop',
       }),
       downloadCancel: async () => ({
         id: 'desktop-download', source: 'romsfun', gameUrl: 'https://romsfun.com/roms/game-1.html', fileIndex: 0,
         title: 'Pokemon RomsFun 1', icon: null, filename: 'game.zip', size: '5 MB', status: 'cancelled',
-        receivedBytes: 2, totalBytes: 10, startedAt: '2026-11-23T12:00:00.000Z', completedAt: '2026-11-23T12:00:01.000Z',
+        receivedBytes: 4, totalBytes: 10, startedAt: '2026-11-23T12:00:00.000Z', completedAt: '2026-11-23T12:00:02.000Z',
         destination: null, error: null, platform: 'desktop',
       }),
     };
@@ -262,9 +273,15 @@ test('desktop download navigates to progress and can be cancelled', async ({ pag
 
   await expect(page).toHaveURL(/#\/downloads$/);
   await expect(page.getByText('game.zip', { exact: true })).toBeVisible();
-  await expect(page.getByText('20%')).toBeVisible();
+  await expect(page.getByText('40%')).toBeVisible();
+  await page.getByRole('button', { name: 'Tentar novamente', exact: true }).click();
+  await expect(page.getByText('Baixando', { exact: true })).toBeVisible();
+  await expect(page.getByText('40%')).toBeVisible();
   await page.getByRole('button', { name: 'Cancelar', exact: true }).click();
-  await expect(page.getByText('Cancelado', { exact: true })).toBeVisible();
+  await expect(page.getByRole('dialog')).toContainText('Cancelar download?');
+  await page.getByRole('button', { name: 'Sim, cancelar', exact: true }).click();
+  await expect(page.getByText('game.zip', { exact: true })).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Nenhum download por aqui' })).toBeVisible();
 });
 
 test('a delayed previous search cannot replace a newer term', async ({ page }) => {
@@ -304,7 +321,7 @@ test('console redesign stays neutral, unclipped, and responsive across routes an
   for (const theme of ['dark', 'light']) {
     await page.goto('/#/settings');
     await page.getByRole('button', { name: 'Aparência', exact: true }).click();
-    await page.getByLabel('Tema', { exact: true }).selectOption(theme);
+    await chooseListbox(page, 'Tema', theme === 'dark' ? 'Escuro' : 'Claro');
     for (const width of [390, 768, 1366]) {
       await page.setViewportSize({ width, height: 850 });
       for (const path of paths) {
@@ -334,4 +351,51 @@ test('console redesign stays neutral, unclipped, and responsive across routes an
       }
     }
   }
+});
+
+test('explore collects up to 60 items per provider, paginates 15 per page, and replaces slot 60 with refine card', async ({ page }) => {
+  const pagesRequested: Record<string, number[]> = { romsfun: [] };
+  await page.route('**/api/search?**', async (route) => {
+    const url = new URL(route.request().url());
+    const source = url.searchParams.get('source')!;
+    const pageNumber = Number(url.searchParams.get('page'));
+    const query = url.searchParams.get('q')!;
+    if (source === 'romsfun') pagesRequested.romsfun.push(pageNumber);
+    const results = source === 'romsfun'
+      ? Array.from({ length: 15 }, (_, idx) => {
+          const n = (pageNumber - 1) * 15 + idx + 1;
+          return {
+            title: `Zelda ${n}`,
+            url: `https://romsfun.com/roms/zelda-${n}.html`,
+            icon: null,
+            console: 'Game Boy Advance',
+            size: '5 MB',
+            downloads: 5000 - n,
+          };
+        })
+      : [];
+    await route.fulfill({
+      json: {
+        query,
+        sources: {
+          [source]: {
+            label: labels[source],
+            results,
+            error: null,
+            pagination: { page: pageNumber, has_next: source === 'romsfun' && pageNumber < 6 },
+          },
+        },
+      },
+    });
+  });
+
+  await page.goto('/#/explore?q=Zelda&source=romsfun');
+  const fun = page.getByRole('region', { name: 'Resultados RomsFun' });
+  await expect(fun.locator('article')).toHaveCount(15);
+  await expect(fun.getByRole('button', { name: 'Página 4', exact: true })).toBeVisible();
+  expect(pagesRequested.romsfun).toEqual([1, 2, 3, 4]);
+  await fun.getByRole('button', { name: 'Página 4', exact: true }).click();
+  await expect(fun.locator('article')).toHaveCount(14);
+  await expect(fun.getByRole('button', { name: 'Refinar busca', exact: true })).toBeVisible();
+  await expect(fun.getByText('Zelda 60', { exact: true })).toHaveCount(0);
 });

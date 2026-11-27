@@ -31,12 +31,13 @@ describe('downloads API', () => {
     };
     const platform: DownloadPlatform = {
       available: false,
-      startDownload: vi.fn(), cancelDownload: vi.fn(), listDownloads: vi.fn(), onDownloadChanged: vi.fn(),
+      startDownload: vi.fn(), cancelDownload: vi.fn(), retryDownload: vi.fn(), listDownloads: vi.fn(), onDownloadChanged: vi.fn(),
     };
     const api = createDownloadsApi(platform, documentLike as never, (path, params) => `${path}?${new URLSearchParams(params)}`);
 
     const result = await api.start(request);
 
+    expect(api.capabilities.resume).toBe(false);
     expect(result).toEqual({ mode: 'web' });
     expect(link.href).toContain('/download?');
     expect(link.href).toContain('filename=Pokemon+Red.zip');
@@ -46,17 +47,25 @@ describe('downloads API', () => {
     expect(removed).toHaveBeenCalledOnce();
   });
 
-  it('delegates desktop downloads to the narrow platform API', async () => {
+  it('delegates desktop start and retry to the narrow platform API', async () => {
     const started = task();
     const platform: DownloadPlatform = {
       available: true,
-      startDownload: vi.fn(async () => started), cancelDownload: vi.fn(), listDownloads: vi.fn(), onDownloadChanged: vi.fn(),
+      startDownload: vi.fn(async () => started),
+      cancelDownload: vi.fn(),
+      retryDownload: vi.fn(async () => ({ ...started, status: 'downloading' as const, receivedBytes: 1024 })),
+      listDownloads: vi.fn(),
+      onDownloadChanged: vi.fn(),
     };
     const api = createDownloadsApi(platform, undefined, vi.fn());
 
     const result = await api.start(request);
+    const retried = await api.retry('task-1');
 
+    expect(api.capabilities.resume).toBe(true);
     expect(platform.startDownload).toHaveBeenCalledWith(request);
+    expect(platform.retryDownload).toHaveBeenCalledWith('task-1');
     expect(result).toEqual({ mode: 'desktop', task: started });
+    expect(retried.receivedBytes).toBe(1024);
   });
 });

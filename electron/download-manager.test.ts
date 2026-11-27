@@ -1,4 +1,4 @@
-import { mkdtemp, readdir, rm, writeFile } from 'node:fs/promises';
+import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
@@ -72,7 +72,7 @@ describe('desktop download manager', () => {
     expect((await readdir(destination)).sort()).toEqual(['same (1).zip', 'same.zip']);
   });
 
-  it('cancels and removes the partial file', async () => {
+  it('cancels, removes the partial file, and removes the task from list', async () => {
     const destination = await root();
     const manager = new DownloadManager({
       root: destination,
@@ -89,27 +89,38 @@ describe('desktop download manager', () => {
 
     expect(returned.status).toBe('cancelled');
     expect(returned.error).toBeNull();
+    expect(manager.list()).toEqual([]);
     expect(await readdir(destination)).toEqual([]);
   });
 
-  it('waits for active cleanup when the application shuts down', async () => {
+  it('waits for active cleanup and clears leftover partial files on abortAll', async () => {
     const destination = await root();
+    let mode: 'abort' | 'fail' = 'abort';
     const manager = new DownloadManager({
       root: destination,
       endpoint: () => 'http://127.0.0.1:5000/api/download',
-      fetcher: (_url, init) => new Promise((_resolve, reject) => {
-        init.signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')));
-      }),
+      fetcher: (_url, init) => {
+        if (mode === 'fail') {
+          return Promise.resolve(new Response(new Uint8Array([1, 2]), { headers: { 'Content-Length': '5' } }));
+        }
+        return new Promise((_resolve, reject) => {
+          init.signal.addEventListener('abort', () => reject(new DOMException('Aborted', 'AbortError')));
+        });
+      },
     });
-    await manager.start(request());
+    await manager.start(request('active.zip'));
+    mode = 'fail';
+    const failed = waitFor(manager, 'failed');
+    await manager.start(request('failed.zip'));
+    await failed;
 
     await manager.abortAll();
 
-    expect(manager.list()[0].status).toBe('cancelled');
+    expect(manager.list()).toEqual([]);
     expect(await readdir(destination)).toEqual([]);
   });
 
-  it('does not complete a truncated response', async () => {
+  it('keeps the partial file on truncated response so it can be retried', async () => {
     const destination = await root();
     await writeFile(path.join(destination, 'existing.zip'), 'keep');
     const manager = new DownloadManager({
@@ -119,10 +130,100 @@ describe('desktop download manager', () => {
     });
     const failed = waitFor(manager, 'failed');
 
-    await manager.start(request('broken.zip'));
+    const started = await manager.start(request('broken.zip'));
     const final = await failed;
 
+    expect(final.status).toBe('failed');
+    expect(final.receivedBytes).toBe(2);
     expect(final.error).toContain('incompleto');
-    expect(await readdir(destination)).toEqual(['existing.zip']);
+    const entries = await readdir(destination);
+    expect(entries).not.toContain('broken.zip');
+    expect(entries).toContain(`.broken.zip.${started.id}.part`);
+  });
+
+  it('retries a failed download from the last chunk using Range and 206 Partial Content', async () => {
+    const destination = await root();
+    const seenInits: Array<RequestInit | undefined> = [];
+    let attempt = 0;
+    const manager = new DownloadManager({
+      root: destination,
+      endpoint: () => 'http://127.0.0.1:5000/api/download',
+      fetcher: async (_url, init) => {
+        seenInits.push(init);
+        attempt += 1;
+        if (attempt === 1) {
+          return new Response(new Uint8Array([1, 2]), { headers: { 'Content-Length': '5' } });
+        }
+        return new Response(new Uint8Array([3, 4, 5]), {
+          status: 206,
+          headers: {
+            'Content-Length': '3',
+            'Content-Range': 'bytes 2-4/5',
+          },
+        });
+      },
+    });
+    const failed = waitFor(manager, 'failed');
+    const started = await manager.start(request('resumed.zip'));
+    await failed;
+
+    const completed = waitFor(manager, 'completed');
+    const retried = await manager.retry(started.id);
+    const final = await completed;
+
+    expect(retried.receivedBytes).toBe(2);
+    expect((seenInits[1]?.headers as Record<string, string>)?.Range).toBe('bytes=2-');
+    expect(final.status).toBe('completed');
+    expect(final.receivedBytes).toBe(5);
+    expect(final.totalBytes).toBe(5);
+    expect(await readFile(path.join(destination, 'resumed.zip'))).toEqual(Buffer.from([1, 2, 3, 4, 5]));
+    expect(await readdir(destination)).toEqual(['resumed.zip']);
+  });
+
+  it('truncates and rewrites when server ignores Range and returns 200', async () => {
+    const destination = await root();
+    let attempt = 0;
+    const manager = new DownloadManager({
+      root: destination,
+      endpoint: () => 'http://127.0.0.1:5000/api/download',
+      fetcher: async () => {
+        attempt += 1;
+        if (attempt === 1) {
+          return new Response(new Uint8Array([1, 2]), { headers: { 'Content-Length': '5' } });
+        }
+        return new Response(new Uint8Array([1, 2, 3, 4, 5]), {
+          status: 200,
+          headers: { 'Content-Length': '5' },
+        });
+      },
+    });
+    const failed = waitFor(manager, 'failed');
+    const started = await manager.start(request('fallback.zip'));
+    await failed;
+
+    const completed = waitFor(manager, 'completed');
+    await manager.retry(started.id);
+    const final = await completed;
+
+    expect(final.receivedBytes).toBe(5);
+    expect(await readFile(path.join(destination, 'fallback.zip'))).toEqual(Buffer.from([1, 2, 3, 4, 5]));
+  });
+
+  it('cancelling a failed download removes partial and lock files and clears it from list', async () => {
+    const destination = await root();
+    const manager = new DownloadManager({
+      root: destination,
+      endpoint: () => 'http://127.0.0.1:5000/api/download',
+      fetcher: async () => new Response(new Uint8Array([1, 2]), { headers: { 'Content-Length': '5' } }),
+    });
+    const failed = waitFor(manager, 'failed');
+    const started = await manager.start(request('failed-cancel.zip'));
+    await failed;
+
+    const returned = await manager.cancel(started.id);
+
+    expect(returned.status).toBe('cancelled');
+    expect(manager.list()).toEqual([]);
+    expect(await readdir(destination)).toEqual([]);
   });
 });

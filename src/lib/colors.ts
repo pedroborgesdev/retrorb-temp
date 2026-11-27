@@ -16,7 +16,7 @@ export const sourcePalettes = { romsfun: 'coral', romspure: 'orange', romsgames:
 export const sourceTextures = { romsfun: 'dots', romspure: 'grid', romsgames: 'dots', wowroms: 'grid' } as const;
 export type ThemeVariables = CSSProperties & Record<`--retro-${string}`, string>;
 export const accentOptions = {
-  brand: { label: 'turquesa da logo', color: brand.turquesa },
+  brand: { label: 'laranja da logo', color: brand.laranja },
   coral: { label: 'coral da logo', color: brand.coral },
   blue: { label: 'azul', color: retroColors.blue },
   green: { label: 'verde', color: retroColors.green },
@@ -45,6 +45,7 @@ export function themeVariables(theme: 'dark' | 'light', accent: keyof typeof acc
     '--retro-paper': brand.papel,
     '--retro-brand-ink': brand.tinta,
     '--retro-teal': brand.turquesa,
+    '--retro-petrol': brand.petroleo,
     '--retro-coral': brand.coral,
     '--retro-orange': brand.laranja,
     '--retro-gold': retroColors.gold,

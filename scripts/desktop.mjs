@@ -4,7 +4,7 @@ import { loadEnv } from 'vite';
 import electron from 'electron';
 
 const env = { ...loadEnv('production', process.cwd(), ''), ...process.env };
-const api = spawn(process.execPath, ['scripts/api.mjs'], { stdio: 'inherit', env });
+const api = spawn(process.execPath, ['scripts/api.mjs', '--prebuilt'], { stdio: 'inherit', env });
 let desktop;
 let stopping = false;
 function stop(code) {
@@ -28,7 +28,7 @@ try {
     } catch { /* The API may still be starting. */ }
     await setTimeout(200);
   }
-  if (!ready || stopping) throw new Error('A API não iniciou. Confira a porta configurada e as dependências Python.');
+  if (!ready || stopping) throw new Error('A API não iniciou. Confira a porta configurada e o runtime Go.');
   const desktopEnv = { ...env };
   // Presence of this variable, even when empty, makes Electron run as plain Node.
   // require("electron") then returns the executable path and app is undefined.

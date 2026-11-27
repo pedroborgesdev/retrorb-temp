@@ -86,7 +86,7 @@ def test_search_uses_submitted_browse_page_and_returns_exact_contract():
     assert len(session.calls) == 1
     url, options = session.calls[0]
     assert url == BROWSE_URL
-    assert options["params"] == {"q": "Pokémon Fire Red"}
+    assert options["params"] == {"q": "Pokémon Fire Red", "sort": "downloads"}
     assert options["timeout"] == 15
     assert options["allow_redirects"] is False
 
@@ -234,7 +234,7 @@ def test_search_page_uses_numbered_path_and_reports_next_page():
     }
     url, options = session.calls[0]
     assert url == "https://romsfun.com/browse-all-roms/page/2/"
-    assert options["params"] == {"q": "Pokemon"}
+    assert options["params"] == {"q": "Pokemon", "sort": "downloads"}
 
 
 def test_search_page_reports_last_page_without_next_link():

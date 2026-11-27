@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { filterAndSort, formatNumber, safeUrl, sizeBytes } from './format';
+import { filterAndSort, formatNumber, safeDownloadUrl, safeUrl, sizeBytes } from './format';
 import { gameResponseSchema, searchResponseSchema, type CatalogItem } from '../types/contracts';
 
 const item = (title: string, size: string | null, downloads: number | null): CatalogItem => ({ title, size, downloads, console: 'GBA', source: 'romsfun', url: null, icon: null });
@@ -7,6 +7,10 @@ const item = (title: string, size: string | null, downloads: number | null): Cat
 describe('untrusted links', () => {
   it.each(['javascript:alert(1)', 'file:///etc/passwd', 'http://example.com', 'https://user:pass@example.com', 'https://example.com\\@localhost', 'https://example.com/\nfile'])('rejects %s', (url) => expect(safeUrl(url)).toBeNull());
   it('keeps signed HTTPS download URLs', () => expect(safeUrl('https://files.example.com/a.zip?token=a%2Bb')).toBe('https://files.example.com/a.zip?token=a%2Bb'));
+  it('rejects fragment placeholder download URLs while keeping valid ones', () => {
+    expect(safeDownloadUrl('https://romsfun.com/download/god-of-war-ii-12928/1#')).toBeNull();
+    expect(safeDownloadUrl('https://files.example.com/a.zip?token=a%2Bb')).toBe('https://files.example.com/a.zip?token=a%2Bb');
+  });
 });
 describe('sorting loaded records', () => {
   it('compares sizes numerically across units and places unknown sizes last', () => {

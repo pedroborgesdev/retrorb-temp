@@ -16,7 +16,7 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { failed: boolean
   static getDerivedStateFromError() { return { failed: true }; }
   componentDidCatch(error: Error, info: ErrorInfo) { console.error('Interface error', error, info.componentStack); }
   render() {
-    if (this.state.failed) return <div className="flex h-dvh flex-col items-center justify-center gap-4 bg-canvas p-6 font-sans text-ink"><h1 className="text-lg">Não foi possível exibir esta página.</h1><p className="text-sm text-muted">Recarregue para tentar novamente. Seus dados locais serão preservados.</p><button onClick={() => location.reload()} className="rounded-md bg-accent px-4 py-2 text-sm text-white">Recarregar</button></div>;
+    if (this.state.failed) return <div className="flex h-dvh flex-col items-center justify-center gap-4 bg-canvas p-6 font-sans text-ink"><h1 className="font-display text-lg font-semibold tracking-tight">Não foi possível exibir esta página.</h1><p className="text-sm text-muted">Recarregue para tentar novamente. Seus dados locais serão preservados.</p><button onClick={() => location.reload()} className="rounded-md bg-accent px-4 py-2 text-sm text-white">Recarregar</button></div>;
     return this.props.children;
   }
 }
